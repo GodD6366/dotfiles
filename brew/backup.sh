@@ -1,13 +1,4 @@
 #! /bin/bash
-###
- # @Description  :
- # @Author       : jsmjsm
- # @Github       : https://github.com/jsmjsm
- # @Date         : 2021-07-13 13:43:11
- # @LastEditors  : jsmjsm
- # @LastEditTime : 2022-05-20 03:44:03
- # @FilePath     : /BrewMyMac/backup.sh
-###
 
 # 全局变量，填入项目地址
 # HEAD
@@ -69,28 +60,6 @@ backup_setapp(){
     fi
 }
 
-switch_branch(){
-    echo "dir: $DIR"
-
-    git checkout -b brew_backup > /tmp/tmplog
-    if grep -q "fatal: A branch named" /tmp/tmplog ; then
-        echo "create new branch"
-    else
-        echo "checkout to brew_backup"
-        git checkout brew_backup
-    fi
-}
-
-# # > Backup to Github
-# backup_to_github(){
-#     msg='Backup on: '`date`
-#     # echo $msg
-
-#     git add $DIR
-#     git commit -m "$msg"
-#     git push --set-upstream origin brew_backup
-#     git push
-# }
 
 # >>  主程序
 cd $DIR
@@ -104,7 +73,7 @@ fi
 
 # 运行
 install_homebrew > /dev/null
-switch_branch
+
 # 备份
 backup_formulae
 backup_cask
