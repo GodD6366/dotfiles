@@ -28,7 +28,7 @@ backup_to_github(){
     git push
 }
 
-switch_branch
+# switch_branch
 # 备份到 github 要最后运行
 backup_to_github
 exit 0
