@@ -3,7 +3,7 @@
 rm -rf ~/dotfiles/lib
 # mkdir lib
 
-cp -r ~/dotfiles/macos/raycast ~/dotfiles/lib
+cp -r ~/dotfiles/raycast ~/dotfiles/lib
 
 # 获取 node 地址
 CURRENT_NODE_PATH=$(which node)
