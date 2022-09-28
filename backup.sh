@@ -1,20 +1,20 @@
 #! /bin/bash
 
-# 全局变量，填入项目地址
-# HEAD
 DIR=$HOME/dotfiles
 export git=/usr/bin/git
 
-switch_branch(){
-    echo "dir: $DIR"
-    # brew_backup
-    git checkout -b main > /tmp/tmplog
-    if grep -q "fatal: A branch named" /tmp/tmplog ; then
-        echo "create new branch"
-    else
-        echo "checkout to main"
-        git checkout main
-    fi
+# backup my config
+backup() {
+    echo "Backup ~/.zshrc to ~/dotfiles/macos/$(whoami)/zshrc"
+    cp ~/.zshrc ~/dotfiles/macos/$(whoami)/zshrc
+
+    echo "Backup brew bundle to ~/dotfiles/macos/$(whoami)/Brewfile"
+    brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/$(whoami)/Brewfile"
+
+    # echo "Backup brew to ~/dotfiles/brew/backup"
+    # sh -c $HOME/dotfiles/brew/backup.sh
+
+    # code --list-extensions > ~/dotfiles/_rc/exts.txt
 }
 
 # > Backup to Github
@@ -22,13 +22,15 @@ backup_to_github(){
     msg='Backup on: '`date`
     # echo $msg
 
-    git add $DIR
+    git add $DIR/macos
     git commit -m "$msg"
     git push --set-upstream origin main
     git push
 }
 
-# switch_branch
+# 备份
+backup
 # 备份到 github 要最后运行
 backup_to_github
+
 exit 0
