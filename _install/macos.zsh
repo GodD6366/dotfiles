@@ -35,6 +35,7 @@ install_packages() {
     jq
     wget
     zsh
+    thefuck
   )
 
   echo "==========================================================="
@@ -84,21 +85,20 @@ setup_omz() {
   echo "  - zsh-z"
   echo "-----------------------------------------------------------"
 
-  export ZSH_CUSTOM_WITH_DEF=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
 
-  git clone https://github.com/Aloxaf/fzf-tab $ZSH_CUSTOM_WITH_DEF/plugins/fzf-tab
-  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM_WITH_DEF/plugins/zsh-autosuggestions
-#   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM_WITH_DEF/plugins/zsh-syntax-highlighting
-  git clone https://github.com/zdharma/fast-syntax-highlighting.git $ZSH_CUSTOM_WITH_DEF/plugins/F-Sy-H
-  git clone https://github.com/mafredri/zsh-async.git $ZSH_CUSTOM_WITH_DEF/plugins/zsh-async
-  git clone https://github.com/sukkaw/zsh-gitcd.git $ZSH_CUSTOM_WITH_DEF/plugins/zsh-gitcd
-  git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM_WITH_DEF/plugins/zsh-z
+  git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fzf-tab
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  git clone https://github.com/zdharma/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/F-Sy-H
+  git clone https://github.com/mafredri/zsh-async.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-async
+  git clone https://github.com/sukkaw/zsh-gitcd.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-gitcd
+  git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-z
 
-#   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM_WITH_DEF/themes/powerlevel10k
-  
+#   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
   echo "安装 spaceship 主题"
-  git clone https://github.com/spaceship-prompt/spaceship-prompt.git $ZSH_CUSTOM_WITH_DEF/themes/spaceship-prompt --depth=1
-  ln -s $ZSH_CUSTOM_WITH_DEF/themes/spaceship-prompt/spaceship.zsh-theme $ZSH_CUSTOM_WITH_DEF/themes/spaceship.zsh-theme
+  git clone https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt --depth=1
+  ln -s ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme $ZSH_CUSTOM_WITH_DEF/themes/spaceship.zsh-theme
 
 }
 
