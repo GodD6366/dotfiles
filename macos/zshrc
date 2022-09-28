@@ -391,10 +391,14 @@ gig() { curl -L -s https://www.gitignore.io/api/$@;}
 # backup my config
 bk() {
     cp ~/.zshrc ~/dotfiles/macos/zshrc
-    # brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
+    brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
     sh -c $HOME/dotfiles/brew/backup.sh
-    sh -c $HOME/dotfiles/backup.sh
     # code --list-extensions > ~/dotfiles/_rc/exts.txt
+}
+
+# upload my config
+up(){
+    sh -c $HOME/dotfiles/backup.sh
 }
 
 # eval "__sukka_original_$(which omz)"
