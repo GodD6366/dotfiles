@@ -196,14 +196,6 @@ zshrc() {
 #   cat $HOME/dotfiles/p10k/.p10k.zsh > $HOME/.p10k.zsh
 }
 
-vimrc() {
-  echo "==========================================================="
-  echo "                  Import GodD env vimrc                   "
-  echo "-----------------------------------------------------------"
-
-  cat $HOME/dotfiles/vim/.vimrc > $HOME/.vimrc
-}
-
 fix_home_end_keybinding() {
   mkdir -p $HOME/Library/KeyBindings/
   echo "{
@@ -219,7 +211,7 @@ finish() {
   echo -n "* Clean up..."
 
   cd $HOME
-  rm -rf $HOME/dotfiles
+#   rm -rf $HOME/dotfiles
 
   echo "Done!"
   echo ""
@@ -230,6 +222,7 @@ finish() {
   echo "- npm login"
   echo "- ci-edit-update"
   echo "- git-config"
+  echo "- recover_mac"
   echo "* open vim and run :PlugInstall"
   echo "==========================================================="
 

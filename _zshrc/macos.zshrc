@@ -559,8 +559,16 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 
 
-# autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+# autojump j
+# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # flutter
 # export PATH="$PATH:/Users/dcc/coding/flutter/bin"
+
+backup_mac(){
+  sh -c $HOME/dotfiles/brew/backup.sh
+}
+
+recover_mac(){
+  sh -c $HOME/dotfiles/brew/brew_my_mac.sh
+}

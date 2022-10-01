@@ -19,7 +19,7 @@ cat << -EOF
 
 # Global Variable
 type=0
-WD=`pwd`/backup
+WD=`pwd`/brew/backup
 
 # > Install Homebrew
 install_homebrew(){
