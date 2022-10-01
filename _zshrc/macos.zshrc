@@ -390,15 +390,6 @@ update_ohmyzsh_custom_plugins() {
 
 gig() { curl -L -s https://www.gitignore.io/api/$@;}
 
-# backup my config
-bk() {
-    cp ~/.zshrc ~/dotfiles/macos/zshrc
-    # brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
-    sh -c $HOME/dotfiles/brew/backup.sh
-    sh -c $HOME/dotfiles/backup.sh
-    # code --list-extensions > ~/dotfiles/_rc/exts.txt
-}
-
 # eval "__sukka_original_$(which omz)"
 # unfunction omz
 
@@ -565,10 +556,21 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # flutter
 # export PATH="$PATH:/Users/dcc/coding/flutter/bin"
 
+# bk() {
+#     cp ~/.zshrc ~/dotfiles/macos/zshrc
+#     # brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
+#     # sh -c $HOME/dotfiles/brew/backup.sh
+#     sh -c $HOME/dotfiles/backup.sh
+#     # code --list-extensions > ~/dotfiles/_rc/exts.txt
+# }
+
+# backup my config
 backup_mac(){
-  sh -c $HOME/dotfiles/brew/backup.sh
+    sh -c $HOME/dotfiles/backup.sh
+#   sh -c $HOME/dotfiles/brew/backup.sh
 }
 
 recover_mac(){
-  sh -c $HOME/dotfiles/brew/brew_my_mac.sh
+  brew bundle --file="~/dotfiles/macos/$(whoami)/Brewfile"
+#   sh -c $HOME/dotfiles/brew/brew_my_mac.sh
 }

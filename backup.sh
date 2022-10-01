@@ -11,8 +11,8 @@ backup() {
     echo "Backup brew bundle to ~/dotfiles/macos/$(whoami)/Brewfile"
     brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/$(whoami)/Brewfile"
 
-    echo "Backup brew to ~/dotfiles/brew/backup"
-    sh -c $HOME/dotfiles/brew/backup.sh
+    # echo "Backup brew to ~/dotfiles/brew/backup"
+    # sh -c $HOME/dotfiles/brew/backup.sh
 
     # code --list-extensions > ~/dotfiles/_rc/exts.txt
 }

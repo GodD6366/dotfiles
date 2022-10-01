@@ -1,3 +1,5 @@
+> 已启用
+
 # 🍻 BrewMyMac -- 自动化备份 & 安装 macOS 应用程序
 
 ![BrewMyMac](png/BrewMyMac.png)
