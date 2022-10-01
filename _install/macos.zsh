@@ -36,6 +36,7 @@ install_packages() {
     wget
     zsh
     thefuck
+    mas
   )
 
   echo "==========================================================="
