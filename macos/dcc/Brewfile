@@ -114,6 +114,8 @@ cask "telegram"
 cask "termhere"
 # General-purpose text editor
 cask "textmate"
+# Remote control software
+cask "todesk"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
 # Rust-based terminal
