@@ -98,7 +98,7 @@ setup_omz() {
 
   echo "安装 spaceship 主题"
   git clone https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt --depth=1
-  ln -s ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme $ZSH_CUSTOM_WITH_DEF/themes/spaceship.zsh-theme
+  ln -s ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
 
 }
 
@@ -134,17 +134,17 @@ install_nodejs() {
     @upimg/cli
     0x
     cf-firewall-rules-generator
-    clinic
+    # clinic
     hexo-cli
     ipip-cli
     nali-cli@next
     vercel
     npm-why
-    pnpm
+    # pnpm
     npm
-    posea
+    # posea
     serve
-    surge
+    # surge
     yarn
   )
 
@@ -193,7 +193,7 @@ zshrc() {
   echo "-----------------------------------------------------------"
 
   cat $HOME/dotfiles/_zshrc/macos.zshrc > $HOME/.zshrc
-  cat $HOME/dotfiles/p10k/.p10k.zsh > $HOME/.p10k.zsh
+#   cat $HOME/dotfiles/p10k/.p10k.zsh > $HOME/.p10k.zsh
 }
 
 vimrc() {

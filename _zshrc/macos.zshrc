@@ -6,9 +6,6 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-export N_PREFIX=$HOME/.n
-export PATH=$N_PREFIX/bin:$PATH
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -89,7 +86,7 @@ plugins=(
     zsh-gitcd
     # zsh-completion will be added to FPATH directly
     # zsh-completions
-    # zsh-z
+    zsh-z
     # zsh-interactive-cd
     fzf-tab
 )
@@ -98,6 +95,11 @@ plugins=(
 export NPM_CONFIG_PREFIX="$HOME/.npm-global"
 # Create .npm-global folder if not exists
 [[ ! -d "$HOME/.npm-global" ]] && mkdir -p $HOME/.npm-global
+
+# fnm
+if (( $+commands[fnm] )); then
+    eval "$(fnm env --use-on-cd --shell zsh)"
+fi
 
 # Path should be set after fnm
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/openjdk@8/bin:/opt/homebrew/bin:$PATH"
@@ -115,8 +117,6 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# fix tab error 
-# sudo dpkg-reconfigure locales
 export LANG=en_US.UTF-8
 
 alias rezsh="omz reload"
@@ -393,7 +393,9 @@ gig() { curl -L -s https://www.gitignore.io/api/$@;}
 # backup my config
 bk() {
     cp ~/.zshrc ~/dotfiles/macos/zshrc
-    brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
+    # brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
+    sh -c $HOME/dotfiles/brew/backup.sh
+    sh -c $HOME/dotfiles/backup.sh
     # code --list-extensions > ~/dotfiles/_rc/exts.txt
 }
 
@@ -408,6 +410,32 @@ bk() {
 #         __sukka_original_omz $@
 #     fi
 # }
+
+# Lazyload Function
+
+## Setup a mock function for lazyload
+## Usage:
+## 1. Define function "_sukka_lazyload_command_[command name]" that will init the command
+## 2. sukka_lazyload_add_command [command name]
+sukka_lazyload_add_command() {
+    eval "$1() { \
+        unfunction $1; \
+        _sukka_lazyload_command_$1; \
+        $1 \$@; \
+    }"
+}
+## Setup autocompletion for lazyload
+## Usage:
+## 1. Define function "_sukka_lazyload_completion_[command name]" that will init the autocompletion
+## 2. sukka_lazyload_add_comp [command name]
+sukka_lazyload_add_completion() {
+    local comp_name="_sukka_lazyload__compfunc_$1"
+    eval "${comp_name}() { \
+        compdef -d $1; \
+        _sukka_lazyload_completion_$1; \
+    }"
+    compdef $comp_name $1
+}
 
 # Load zsh-async worker
 # source ${ZSH_CUSTOM:-$ZSH/custom}/plugins/zsh-async/async.zsh
@@ -533,3 +561,6 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 
 # autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# flutter
+# export PATH="$PATH:/Users/dcc/coding/flutter/bin"
