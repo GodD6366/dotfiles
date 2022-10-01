@@ -78,7 +78,7 @@ install_homebrew > /dev/null
 backup_formulae
 backup_cask
 backup_application
-backup_setapp
+# backup_setapp
 # 备份到 github 要最后运行
 # backup_to_github
 exit 0

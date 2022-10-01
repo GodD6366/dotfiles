@@ -267,7 +267,7 @@ select_homebrew_mirror
 echo "🤔 查看 package 信息 (用于配置环境变量): 运行 \$brew info [模块名]"
 compare_application
 sleep 3
-setapp_notify
+# setapp_notify
 echo
 echo '🤖️ 自动化备份安装，请先运行 ./backup.sh 运行正常无误后，再运行 ./install_backup.sh '
 echo

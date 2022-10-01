@@ -222,7 +222,9 @@ finish() {
   echo "- npm login"
   echo "- ci-edit-update"
   echo "- git-config"
+  echo "- backup_mac"
   echo "- recover_mac"
+  echo ""
   echo "* open vim and run :PlugInstall"
   echo "==========================================================="
 
