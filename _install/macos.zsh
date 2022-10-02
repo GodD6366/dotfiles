@@ -226,7 +226,6 @@ finish() {
   echo "- npm login         # 登录 npm"
   echo "- ci-edit-update    # 初始化编辑器"
   echo ""
-  echo "* open vim and run :PlugInstall"
   echo "==========================================================="
 
   cd $HOME
