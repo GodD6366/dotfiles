@@ -14,8 +14,8 @@ install_to_crontab() {
         echo
         echo SHELL=$SHELL > crontab_conf
         echo PATH=$PATH >> crontab_conf
-        echo "00 11 * * * $script > /tmp/dotfiles_Backup.log && osascript -e 'display notification \"$WD/brew/backup\" with title \"dotfiles 备份成功, 已上传至 GitHub\" '" >> crontab_conf
-        echo "00 20 * * * $script > /tmp/dotfiles_Backup.log && osascript -e 'display notification \"$WD/brew/backup\" with title \"dotfiles 备份成功, 已上传至 GitHub\" '" >> crontab_conf
+        echo "00 11 * * * $script > /tmp/dotfiles_Backup.log && osascript -e 'display notification \"$WD/backup\" with title \"dotfiles 备份成功, 已上传至 GitHub\" '" >> crontab_conf
+        echo "00 20 * * * $script > /tmp/dotfiles_Backup.log && osascript -e 'display notification \"$WD/backup\" with title \"dotfiles 备份成功, 已上传至 GitHub\" '" >> crontab_conf
         echo "运行 \$ crontab -e"
 
         echo "插入以下内容: "

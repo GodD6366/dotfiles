@@ -64,7 +64,7 @@ clone_repo() {
   git clone https://github.com/GodD6366/dotfiles.git
 
   cd ./dotfiles
-  rm -rf .git
+#   rm -rf .git
 }
 
 setup_omz() {
@@ -104,7 +104,7 @@ setup_omz() {
 }
 
 brew_bundle() {
-  brew bundle
+  brew bundle --file="~/dotfiles/macos/$(whoami)/Brewfile"
 }
 
 install_nodejs() {
