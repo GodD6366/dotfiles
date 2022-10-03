@@ -21,12 +21,14 @@ backup() {
 backup_to_github(){
     msg='Backup on: '`date`
     # echo $msg
-
     cd $DIR
-    git add $DIR/macos
-    git commit -m "$msg"
-    git push --set-upstream origin main
-    git push
+
+    if [ -n "$(git status -s)" ];then
+        git add $DIR/macos
+        git commit -m "$msg"
+        git push --set-upstream origin main
+        git push
+    fi
 }
 
 # 备份

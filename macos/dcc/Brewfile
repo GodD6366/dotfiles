@@ -90,14 +90,14 @@ cask "qlmarkdown"
 # QuickLook plugin for plaintext files without an extension
 cask "qlstephen"
 cask "qlvideo"
+# Instant messaging tool
+cask "qq"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
 # QuickLook generator for Adobe Swatch Exchange files
 cask "quicklookase"
 # Control your tools with a few keystrokes
 cask "raycast"
-# Tool to reverse the direction of scrolling
-cask "scroll-reverser"
 # Screenshot measurement and annotation tool
 cask "shottr"
 # Snip or pin screenshots
