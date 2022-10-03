@@ -9,16 +9,26 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Shell extension to jump to frequently used directories
 brew "autojump"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # View disk space usage and delete unwanted data, fast
 brew "dua-cli"
 # Fast and simple Node.js version manager
 brew "fnm"
 # Distributed revision control system
 brew "git"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Mac App Store command-line interface
 brew "mas"
 # Interpreted, interactive, object-oriented programming language
@@ -29,6 +39,8 @@ brew "telnet"
 brew "thefuck"
 # Internet file retriever
 brew "wget"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 cask "account-switcher"
@@ -58,6 +70,8 @@ cask "gray"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Media system
+cask "jellyfin"
 # File archiver
 cask "keka"
 # Helper application for the Keka file archiver
@@ -76,7 +90,6 @@ cask "mos"
 cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
-cask "paper"
 # Tool for uploading images
 cask "picgo"
 # QuickLook plug-in that renders source code with syntax highlighting
@@ -104,8 +117,6 @@ cask "snipaste"
 cask "spotify"
 # System monitor for the menu bar
 cask "stats"
-# Network toolbox
-cask "surge"
 # App to switch hosts
 cask "switchhosts"
 # Terminal emulator, SSH and serial client
@@ -118,6 +129,8 @@ cask "termhere"
 cask "textmate"
 # Remote control software
 cask "todesk"
+# Open-source code editor
+cask "visual-studio-code"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
 # Rust-based terminal
@@ -131,14 +144,13 @@ mas "Dropover", id: 1355679052
 mas "Infuse", id: 1136220934
 mas "Keynote 讲演", id: 409183694
 mas "Magnet", id: 441258766
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "PasteNow", id: 1552536109
+mas "Playgrounds", id: 1496833156
 mas "PushDeer", id: 1596771139
 mas "RunCat", id: 1429033973
 mas "ServerCat", id: 1501532023
 mas "Speedtest", id: 1153157709
 mas "The Unarchiver", id: 425424353
-mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
 mas "Xnip", id: 1221250572
 mas "企业微信", id: 1189898970

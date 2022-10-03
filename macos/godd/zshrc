@@ -572,5 +572,6 @@ backup_mac(){
 
 recover_mac(){
   brew bundle --file="~/dotfiles/macos/$(whoami)/Brewfile"
-#   sh -c $HOME/dotfiles/brew/brew_my_mac.sh
+
+  sh -c $HOME/dotfiles/install_backup.sh
 }
