@@ -60,6 +60,8 @@ cask "gray"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Media system
+cask "jellyfin"
 # File archiver
 cask "keka"
 # Helper application for the Keka file archiver
