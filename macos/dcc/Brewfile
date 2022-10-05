@@ -54,6 +54,8 @@ cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 # GIT client
 cask "fork"
+# Web browser
+cask "google-chrome"
 # Tool to set light or dark appearance on a per-app basis
 cask "gray"
 # Free and open-source media player
@@ -130,23 +132,3 @@ cask "warp"
 cask "webpquicklook"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
-mas "Bob", id: 1630034110
-mas "Disk Speed Test", id: 425264550
-mas "Dropover", id: 1355679052
-mas "Infuse", id: 1136220934
-mas "Keynote 讲演", id: 409183694
-mas "Magnet", id: 441258766
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "PasteNow", id: 1552536109
-mas "PushDeer", id: 1596771139
-mas "RunCat", id: 1429033973
-mas "ServerCat", id: 1501532023
-mas "Speedtest", id: 1153157709
-mas "The Unarchiver", id: 425424353
-mas "WireGuard", id: 1451685025
-mas "Xcode", id: 497799835
-mas "Xnip", id: 1221250572
-mas "企业微信", id: 1189898970
-mas "微信", id: 836500024
-mas "钉钉", id: 1435447041
-mas "飞书", id: 1551632588
