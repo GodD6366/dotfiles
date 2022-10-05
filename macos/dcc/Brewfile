@@ -91,6 +91,7 @@ cask "qlimagesize"
 cask "qlmarkdown"
 # QuickLook plugin for plaintext files without an extension
 cask "qlstephen"
+# QuickLook generator for video files
 cask "qlvideo"
 # Instant messaging tool
 cask "qq"
