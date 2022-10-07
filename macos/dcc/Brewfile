@@ -44,8 +44,6 @@ cask "appcleaner"
 cask "balenaetcher"
 # Menu bar icon organizer
 cask "bartender"
-# Tool to list all active shortcuts of the current application
-cask "cheatsheet"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Voice and text chat software
