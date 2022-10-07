@@ -34,6 +34,8 @@ brew "wget"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 cask "account-switcher"
+# Apple TV Aerial screensaver
+cask "aerial"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Android SDK component
@@ -50,6 +52,7 @@ cask "clashx-pro"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+cask "font-fira-code"
 # Typeface made for developers
 cask "font-jetbrains-mono"
 # Developer targeted fonts with a high number of glyphs
@@ -146,6 +149,7 @@ mas "PasteNow", id: 1552536109
 mas "PushDeer", id: 1596771139
 mas "RunCat", id: 1429033973
 mas "ServerCat", id: 1501532023
+mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
 mas "Xcode", id: 497799835
 mas "Xnip", id: 1221250572
