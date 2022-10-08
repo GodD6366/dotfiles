@@ -8,8 +8,14 @@ tap "homebrew/core"
 brew "autojump"
 # Fast and simple Node.js version manager
 brew "fnm"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Mac App Store command-line interface
+brew "mas"
 # User interface to the TELNET protocol
 brew "telnet"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Internet file retriever
 brew "wget"
 # Command-line helper for the 1Password password manager
@@ -34,6 +40,8 @@ cask "keka"
 cask "keyboardholder"
 # Simple and elegant markdown editor
 cask "mark-text"
+# Remote desktop client
+cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently

@@ -13,8 +13,8 @@ zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 
 
 # Load pure theme
-zinit ice pick"async.zsh" src"pure.zsh" # with zsh-async library that's bundled with it.
-zinit light sindresorhus/pure
+# https://github.com/sindresorhus/pure
+zi light-mode for @sindresorhus/pure
 
 # zi ice depth=1;
 # zi light romkatv/powerlevel10k
@@ -28,12 +28,28 @@ zinit snippet OMZ::lib/clipboard.zsh
 zinit snippet OMZ::lib/termsupport.zsh
 
 
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma-continuum/fast-syntax-highlighting
+zi ice lucid wait as'completion'
+zi light zsh-users/zsh-completions
+# zinit light zsh-users/zsh-completions
+
+# zinit light zsh-users/zsh-autosuggestions
+# zinit light zdharma-continuum/fast-syntax-highlighting
+zi ice wait lucid atinit"ZI[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
+zi light z-shell/F-Sy-H
+zi ice wait lucid atload"!_zsh_autosuggest_start"
+zi load zsh-users/zsh-autosuggestions
+
 zinit light agkozak/zsh-z
 zinit light SukkaW/zsh-gitcd
-# zinit light Aloxaf/fzf-tab
+
+zi ice lucid wait has'fzf'
+zi light Aloxaf/fzf-tab
+
+zi ice wait lucid
+zi load z-shell/zsh-navigation-tools
+
+# zi ice as"completion"
+# zi snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
 omz_plugins=(
     git
@@ -46,9 +62,6 @@ omz_plugins=(
 for plugin in ${omz_plugins[@]}; do
     zinit snippet OMZP::$plugin
 done
-
-
-
 
 # Switching directories for lazy people
 setopt autocd
