@@ -73,7 +73,3 @@ unsetopt correct_all
 unsetopt correct
 DISABLE_CORRECTION="true"
 alias dh='dirs -v'
-
-# load custom shell
-source $HOME/dotfiles/_zshrc/custom.sh
-# source <(curl -sL https://raw.githubusercontent.com/GodD6366/dotfiles/main/_zshrc/custom.sh)
