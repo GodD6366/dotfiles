@@ -310,7 +310,7 @@ install-nali
 install-ctop
 thefuck
 ci_editor
-zshrc
+zshrc # chsh -s $(which zsh)
 chmod
 upgrade-packages
 finish

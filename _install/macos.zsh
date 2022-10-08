@@ -67,6 +67,18 @@ clone_repo() {
 #   rm -rf .git
 }
 
+setup_zi_4_zsh(){
+  echo "==========================================================="
+  echo "                      Shells Enviroment"
+  echo "-----------------------------------------------------------"
+  echo "* Installing Zi..."
+  echo "-----------------------------------------------------------"
+
+  # https://wiki.zshell.dev/docs/getting_started/installation
+  sh -c "$(curl -fsSL git.io/get-zi)" --
+
+}
+
 setup_omz() {
   echo "==========================================================="
   echo "                      Shells Enviroment"
@@ -193,8 +205,10 @@ zshrc() {
   echo "                  Import GodD env zshrc                   "
   echo "-----------------------------------------------------------"
 
+  # Zsh By Default
+  # sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh)
   cat $HOME/dotfiles/_zshrc/macos.zshrc > $HOME/.zshrc
-#   cat $HOME/dotfiles/p10k/.p10k.zsh > $HOME/.p10k.zsh
+  #   cat $HOME/dotfiles/p10k/.p10k.zsh > $HOME/.p10k.zsh
 }
 
 fix_home_end_keybinding() {
@@ -235,7 +249,8 @@ start
 install_homebrew
 install_packages
 clone_repo
-setup_omz
+# setup_omz
+setup_zi_4_zsh
 brew_bundle
 install_nodejs
 ci_editor
