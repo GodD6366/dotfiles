@@ -13,13 +13,13 @@ zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 
 
 # Load pure theme
-# zinit ice pick"async.zsh" src"pure.zsh" # with zsh-async library that's bundled with it.
-# zinit light sindresorhus/pure
+zinit ice pick"async.zsh" src"pure.zsh" # with zsh-async library that's bundled with it.
+zinit light sindresorhus/pure
 
 # zi ice depth=1;
 # zi light romkatv/powerlevel10k
 
-zinit light spaceship-prompt/spaceship-prompt
+# zinit light spaceship-prompt/spaceship-prompt
 
 
 zinit snippet OMZ::lib/history.zsh
@@ -63,3 +63,4 @@ alias dh='dirs -v'
 
 # load custom shell
 source $HOME/dotfiles/_zshrc/custom.sh
+# source <(curl -sL https://raw.githubusercontent.com/GodD6366/dotfiles/main/_zshrc/custom.sh)
