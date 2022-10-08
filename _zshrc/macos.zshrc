@@ -12,6 +12,25 @@ autoload -Uz _zi
 zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 
 
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+
+# completion detail
+zstyle ':completion:*:complete:-command-:*:*' ignored-patterns '*.pdf|*.exe|*.dll'
+zstyle ':completion:*:*sh:*:' tag-order files
+
+# case-insensitive (uppercase from lowercase) completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# process completion
+zstyle ':completion:*:processes' command 'ps -au$USER'
+zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
+
+
+
 # Load pure theme
 # https://github.com/sindresorhus/pure
 zi light-mode for @sindresorhus/pure
@@ -75,5 +94,5 @@ DISABLE_CORRECTION="true"
 alias dh='dirs -v'
 
 # load custom shell
-source $HOME/dotfiles/_zshrc/custom.sh
-# source <(curl -sL https://raw.githubusercontent.com/GodD6366/dotfiles/main/_zshrc/custom.sh)
+source $HOME/dotfiles/_zshrc/extends/common.zshrc
+source $HOME/dotfiles/_zshrc/extends/mac-only.zshrc

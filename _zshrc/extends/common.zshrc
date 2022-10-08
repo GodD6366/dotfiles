@@ -11,11 +11,6 @@ fi
 # Path should be set after fnm
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/openjdk@8/bin:/opt/homebrew/bin:$PATH"
 
-autoload -Uz compinit
-for dump in ~/.zcompdump(N.mh+24); do
-  compinit
-done
-compinit -C
 
 # User configuration
 
@@ -24,7 +19,6 @@ compinit -C
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-alias rezsh="omz reload"
 if (( $+commands[code] )); then
     alias zshconfig="code $HOME/.zshrc"
 elif (( $+commands[we] )); then
@@ -32,6 +26,9 @@ elif (( $+commands[we] )); then
 else
     alias zshconfig="nano $HOME/.zshrc"
 fi
+
+
+alias ll="ls -al"
 
 
 # Git Undo
@@ -96,49 +93,6 @@ docker-kill-all() {
 
 cfdns="@1.0.0.1 +tcp"
 
-hash -d desktop="$HOME/Desktop"
-hash -d music="$HOME/Music"
-hash -d pictures="$HOME/Pictures"
-hash -d picture="$HOME/Pictures"
-hash -d downloads="$HOME/Downloads"
-hash -d download="$HOME/Downloads"
-hash -d documents="$HOME/Documents"
-hash -d document="$HOME/Documents"
-hash -d dropbox="$HOME/Dropbox"
-hash -d services="$HOME/Services"
-hash -d projects="$HOME/Project"
-hash -d project="$HOME/Project"
-hash -d tools="$HOME/Tools"
-hash -d tool="$HOME/Tools"
-hash -d applications="/Applications"
-hash -d application="/Applications"
-hash -d surge="$HOME/Library/Application Support/Surge/Profiles"
-hash -d smartdns="$HOME/.config/smartdns"
-
-alias finder_show="defaults write com.apple.finder AppleShowAllFiles YES"
-alias finder_hide="defaults write com.apple.finder AppleShowAllFiles NO"
-clear_finder_icon_cache() {
-    green=$(tput setaf 2)
-    reset=$(tput sgr0)
-    printf "${green}%s${reset}\n" '- Cleaning "/Library/Caches/com.apple.iconservices.store" folder ...'
-    sudo rm -rfv /Library/Caches/com.apple.iconservices.store
-    printf "${green}%s${reset}\n" '- Cleaning "com.apple.dock.iconcache" and "com.apple.dock.iconcache" files ...'
-    sudo find /private/var/folders/ \( -name com.apple.dock.iconcache -or -name com.apple.iconservices \) -exec rm -rfv {} \;
-    sleep 1
-    sudo touch /Applications/*
-    printf "${green}%s${reset}\n" '- Restarting Dock & Finder ...'
-    killall Dock
-    killall Finder
-    sleep 2
-    printf "${green}%s${reset}\n" '- Done!'
-}
-
-clear_dns_cache() {
-    sudo dscacheutil -flushcache
-    sudo killall -HUP mDNSResponder
-    sudo killall mDNSResponderHelper
-}
-
 alias flushdns="clear_dns_cache"
 
 ci-edit-update() {
@@ -200,12 +154,6 @@ git-bk() {
   git branch -c "$br" "backup/$br"
 }
 
-
-brew-fix() {
-    sudo chown -R $(whoami) /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
-    chmod u+w /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
-}
-
 # Kills a process running on a specified tcp port
 killport() {
   echo "Killing process on port: $1"
@@ -252,41 +200,30 @@ extract() {
     fi
 }
 
-update_ohmyzsh_custom_plugins() {
-    red=$(tput setaf 1)
-    blue=$(tput setaf 4)
-    green=$(tput setaf 2)
-    reset=$(tput sgr0)
+# update_ohmyzsh_custom_plugins() {
+#     red=$(tput setaf 1)
+#     blue=$(tput setaf 4)
+#     green=$(tput setaf 2)
+#     reset=$(tput sgr0)
 
-    echo ""
-    printf "${blue}%s${reset}\n" "Upgrading custom plugins"
+#     echo ""
+#     printf "${blue}%s${reset}\n" "Upgrading custom plugins"
 
-    find_folder_by_name "${ZSH_CUSTOM:-$ZSH/custom}" ".git" | while read LINE; do
-        p=${LINE:h}
-        pushd -q "${p}"
+#     find_folder_by_name "${ZSH_CUSTOM:-$ZSH/custom}" ".git" | while read LINE; do
+#         p=${LINE:h}
+#         pushd -q "${p}"
 
-        if git pull --rebase; then
-            printf "${green}%s${reset}\n" "${p:t} has been updated and/or is at the current version."
-        else
-            printf "${red}%s${reset}\n" "There was an error updating ${p:t}. Try again later?"
-        fi
-        popd -q
-    done
-}
+#         if git pull --rebase; then
+#             printf "${green}%s${reset}\n" "${p:t} has been updated and/or is at the current version."
+#         else
+#             printf "${red}%s${reset}\n" "There was an error updating ${p:t}. Try again later?"
+#         fi
+#         popd -q
+#     done
+# }
 
 gig() { curl -L -s https://www.gitignore.io/api/$@;}
 
-# eval "__sukka_original_$(which omz)"
-# unfunction omz
-
-# omz() {
-#     if [[ $1 == update ]]; then
-#         __sukka_original_omz update
-#         update_ohmyzsh_custom_plugins
-#     else
-#         __sukka_original_omz $@
-#     fi
-# }
 
 # Lazyload Function
 
@@ -384,43 +321,7 @@ if (( $+commands[npm] )) &>/dev/null; then
   compdef _npm_completion npm
 fi
 
-# Add OSX-like shadow to image
-# USAGE: osx-shadow [--rm|-r] <original.png> [result.png]
-osx-shadow() {
-    # Help message
-    function help {
-        echo "Wrong number of arguments have been entered."
-        echo "USAGE: osx-shadow [--rm|-r] <original.png> [result.png]"
-    }
 
-    if [[ $1 == --rm || $1 == -r ]]; then
-        # Remove shadow
-        case $# in
-            3) # osx-shadow --rm|-r src.png dist.png
-                convert $2 -crop +50+34 -crop -50-66 $3
-                ;;
-            2) # osx-shadow --rm|-r src.png
-                convert $2 -crop +50+34 -crop -50-66 ${2%.*}-croped.png
-                ;;
-            *)
-                help
-                ;;
-        esac
-    else
-        # Add shadow
-        case $# in
-            2) # osx-shadow src.png dist.png
-                convert $1 \( +clone -background gray -shadow 100x40+0+16 \) +swap -background none -layers merge +repage $2
-                ;;
-            1) # osx-shadow src.png
-                convert $1 \( +clone -background gray -shadow 100x40+0+16 \) +swap -background none -layers merge +repage ${1%.*}-shadow.png
-                ;;
-            *)
-                help
-                ;;
-        esac
-    fi
-}
 
 # This speeds up pasting w/ autosuggest
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
@@ -432,26 +333,14 @@ pasteinit() {
 pastefinish() {
   zle -N self-insert $OLD_SELF_INSERT
 }
+
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 
-ll(){
-  ls -al
-}
-
-# autojump j
-# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # flutter
 # export PATH="$PATH:/Users/dcc/coding/flutter/bin"
 
-# bk() {
-#     cp ~/.zshrc ~/dotfiles/macos/zshrc
-#     # brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
-#     # sh -c $HOME/dotfiles/brew/backup.sh
-#     sh -c $HOME/dotfiles/backup.sh
-#     # code --list-extensions > ~/dotfiles/_rc/exts.txt
-# }
 
 # backup my config
 backup_mac(){
