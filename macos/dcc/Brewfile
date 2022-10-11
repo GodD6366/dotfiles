@@ -44,6 +44,8 @@ cask "android-file-transfer"
 cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
+# Cloud storage service
+cask "baidunetdisk"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Menu bar icon organizer
