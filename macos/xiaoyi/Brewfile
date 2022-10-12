@@ -52,6 +52,8 @@ cask "mos"
 cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Remote desktop
+cask "parsec"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 # Display image info and preview unsupported formats in QuickLook
@@ -76,6 +78,8 @@ cask "stats"
 cask "switchhosts"
 # Terminal emulator, SSH and serial client
 cask "tabby"
+# Remote control software
+cask "todesk"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
 # Rust-based terminal
