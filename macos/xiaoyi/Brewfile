@@ -1,9 +1,12 @@
 tap "1password/tap"
+tap "gouravkhunger/guiscrcpy"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Fast and simple Node.js version manager
@@ -12,6 +15,8 @@ brew "fnm"
 brew "jq"
 # Mac App Store command-line interface
 brew "mas"
+# Display and control your Android device
+brew "scrcpy"
 # User interface to the TELNET protocol
 brew "telnet"
 # Programmatically correct mistyped console commands
@@ -20,6 +25,8 @@ brew "thefuck"
 brew "wget"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
+# Android SDK component
+cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
 # Rule-based custom proxy with GUI based on clash
@@ -102,4 +109,5 @@ mas "Speedtest", id: 1153157709
 mas "Telegram", id: 747648890
 mas "Termius", id: 1176074088
 mas "TestFlight", id: 899247664
+mas "Xcode", id: 497799835
 mas "Xnip", id: 1221250572
