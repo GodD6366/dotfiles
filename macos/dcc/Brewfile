@@ -94,6 +94,8 @@ cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 cask "paper"
+# Remote desktop
+cask "parsec"
 # Tool for uploading images
 cask "picgo"
 # QuickLook plug-in that renders source code with syntax highlighting
