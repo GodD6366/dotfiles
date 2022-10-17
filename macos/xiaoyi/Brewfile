@@ -29,6 +29,8 @@ cask "1password-cli"
 cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
+# Lock/unlock Apple computers using the proximity of a bluetooth low energy device
+cask "bleunlock"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Voice and text chat software
