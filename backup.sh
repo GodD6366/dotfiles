@@ -24,6 +24,7 @@ backup_to_github(){
     cd $DIR
 
     if [ -n "$(git status -s)" ];then
+        git pull --rebase
         git add $DIR/macos
         git commit -m "$msg"
         git push --set-upstream origin main
