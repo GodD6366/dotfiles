@@ -25,6 +25,8 @@ brew "thefuck"
 brew "wget"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
+# Apple TV Aerial screensaver
+cask "aerial"
 # Android SDK component
 cask "android-platform-tools"
 # Application uninstaller
