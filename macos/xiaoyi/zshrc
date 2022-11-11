@@ -14,7 +14,9 @@ zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 
 # Load pure theme
 # https://github.com/sindresorhus/pure
-zi light-mode for @sindresorhus/pure
+# zi light-mode for @sindresorhus/pure
+
+eval "$(starship init zsh)"
 
 # zi ice depth=1;
 # zi light romkatv/powerlevel10k

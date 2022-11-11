@@ -17,6 +17,8 @@ brew "jq"
 brew "mas"
 # Display and control your Android device
 brew "scrcpy"
+# Cross-shell prompt for astronauts
+brew "starship"
 # User interface to the TELNET protocol
 brew "telnet"
 # Programmatically correct mistyped console commands
