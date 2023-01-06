@@ -11,6 +11,8 @@ brew "python@3.10"
 brew "autojump"
 # Fast and simple Node.js version manager
 brew "fnm"
+# Git extension for versioning large files
+brew "git-lfs"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
@@ -100,6 +102,7 @@ cask "warp"
 cask "webpquicklook"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
+mas "1Password for Safari", id: 1569813296
 mas "Bob", id: 1630034110
 mas "Dropover", id: 1355679052
 mas "Infuse", id: 1136220934
