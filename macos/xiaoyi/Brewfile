@@ -63,8 +63,6 @@ cask "microsoft-remote-desktop"
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
-# Reverse proxy, secure introspectable tunnels to localhost
-cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Remote desktop
