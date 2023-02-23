@@ -94,9 +94,9 @@ if (( $+commands[fnm] )); then
     eval "$(fnm env --use-on-cd --shell zsh)"
 fi
 
-# Path should be set after fnm
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/openjdk@8/bin:/opt/homebrew/bin:$PATH"
 
+# Path should be set after fnm
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/opt/homebrew/bin:$PATH"
 
 # User configuration
 

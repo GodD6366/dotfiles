@@ -9,6 +9,8 @@ tap "homebrew/core"
 brew "python@3.10"
 # Shell extension to jump to frequently used directories
 brew "autojump"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Fast and simple Node.js version manager
 brew "fnm"
 # Git extension for versioning large files
@@ -93,6 +95,8 @@ cask "stats"
 cask "switchhosts"
 # Terminal emulator, SSH and serial client
 cask "tabby"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin8"
 # Remote control software
 cask "todesk"
 # Remote desktop application focusing on security
