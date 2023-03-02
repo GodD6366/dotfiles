@@ -61,6 +61,10 @@ cask "keka"
 cask "keyboardholder"
 # Simple and elegant markdown editor
 cask "mark-text"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Multi-platform web browser
+cask "microsoft-edge-beta"
 # Remote desktop client
 cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume
