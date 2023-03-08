@@ -1,10 +1,8 @@
 tap "1password/tap"
 tap "gouravkhunger/guiscrcpy"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Shell extension to jump to frequently used directories
@@ -49,6 +47,8 @@ cask "docker"
 cask "font-fira-code"
 # Typeface made for developers
 cask "font-jetbrains-mono"
+# Developer targeted fonts with a high number of glyphs
+cask "font-sauce-code-pro-nerd-font"
 # GIT client
 cask "fork"
 # Tool to set light or dark appearance on a per-app basis
@@ -75,6 +75,8 @@ cask "mos"
 cask "notion"
 # Remote desktop
 cask "parsec"
+# HTTP client that helps testing and describing APIs
+cask "paw"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 # Display image info and preview unsupported formats in QuickLook
