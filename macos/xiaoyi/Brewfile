@@ -59,7 +59,7 @@ cask "iina"
 cask "keka"
 # Switch input method per application
 cask "keyboardholder"
-# Simple and elegant markdown editor
+# Markdown editor
 cask "mark-text"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
