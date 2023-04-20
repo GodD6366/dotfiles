@@ -25,6 +25,8 @@ brew "starship"
 brew "telnet"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# Generate WireGuard profile from Cloudflare Warp account
+brew "wgcf"
 # Internet file retriever
 brew "wget"
 # Command-line helper for the 1Password password manager
