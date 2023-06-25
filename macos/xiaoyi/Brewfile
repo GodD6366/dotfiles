@@ -120,6 +120,8 @@ cask "vnc-viewer"
 # Rust-based terminal
 cask "warp"
 cask "webpquicklook"
+# Multiplayer code editor
+cask "zed"
 mas "1Password for Safari", id: 1569813296
 mas "Bob", id: 1630034110
 mas "Dropover", id: 1355679052
