@@ -47,6 +47,8 @@ cask "clashx-pro"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+# SSH tool, server management and remote desktop acceleration software
+cask "finalshell"
 # Free monospaced font with programming ligatures
 cask "font-fira-code"
 # Typeface made for developers
