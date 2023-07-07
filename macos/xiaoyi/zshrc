@@ -91,6 +91,8 @@ export NPM_CONFIG_PREFIX="$HOME/.npm-global"
 
 # fnm
 if (( $+commands[fnm] )); then
+    # nodejs 淘宝镜像
+    # export FNM_NODE_DIST_MIRROR=https://taobao.nodejs.org/dist
     eval "$(fnm env --use-on-cd --shell zsh)"
 fi
 
