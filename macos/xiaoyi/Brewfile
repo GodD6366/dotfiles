@@ -55,6 +55,8 @@ cask "font-fira-code"
 cask "font-jetbrains-mono"
 # Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-space-mono-nerd-font"
 # GIT client
 cask "fork"
 # Web browser
@@ -97,6 +99,8 @@ cask "qlmarkdown"
 cask "qlstephen"
 # Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
+# Chinese music streaming application
+cask "qqmusic"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
 # QuickLook generator for Adobe Swatch Exchange files
