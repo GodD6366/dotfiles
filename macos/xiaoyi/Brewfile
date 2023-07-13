@@ -55,6 +55,7 @@ cask "font-fira-code"
 cask "font-jetbrains-mono"
 # Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
+cask "font-space-mono"
 # Developer targeted fonts with a high number of glyphs
 cask "font-space-mono-nerd-font"
 # GIT client
