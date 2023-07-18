@@ -108,6 +108,8 @@ cask "quicklook-json"
 cask "quicklookase"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Team communication and collaboration software
+cask "slack"
 # Music streaming service
 cask "spotify"
 # System monitor for the menu bar
