@@ -86,6 +86,8 @@ cask "mos"
 cask "neteasemusic"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Remote desktop
 cask "parsec"
 # HTTP client that helps testing and describing APIs
