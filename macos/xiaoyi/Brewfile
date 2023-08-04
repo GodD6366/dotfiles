@@ -35,6 +35,8 @@ brew "wget"
 cask "1password-cli"
 # Apple TV Aerial screensaver
 cask "aerial"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Android SDK component
 cask "android-platform-tools"
 # Application uninstaller
@@ -47,8 +49,6 @@ cask "clashx-pro"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
-# SSH tool, server management and remote desktop acceleration software
-cask "finalshell"
 # Free monospaced font with programming ligatures
 cask "font-fira-code"
 # Typeface made for developers
@@ -92,6 +92,8 @@ cask "obsidian"
 cask "parsec"
 # HTTP client that helps testing and describing APIs
 cask "paw"
+# Timer application
+cask "pomotroid"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 # Display image info and preview unsupported formats in QuickLook
@@ -137,6 +139,7 @@ cask "zed"
 mas "1Password for Safari", id: 1569813296
 mas "Bob", id: 1630034110
 mas "Dropover", id: 1355679052
+mas "Flow", id: 1423210932
 mas "Magnet", id: 441258766
 mas "Microsoft To Do", id: 1274495053
 mas "Numbers 表格", id: 409203825
@@ -210,7 +213,6 @@ vscode "miguelsolorio.fluent-icons"
 vscode "miguelsolorio.min-theme"
 vscode "mikestead.dotenv"
 vscode "monokai.theme-monokai-pro-vscode"
-vscode "MS-CEINTL.vscode-language-pack-zh-hans"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode-remote.remote-wsl"
