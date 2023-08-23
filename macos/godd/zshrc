@@ -1,96 +1,89 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-# Path to your oh-my-zsh installation.
-# export PATH=/usr/local/bin:$PATH
-# export PATH=/opt/homebrew/bin:$PATH
+if [[ ! -f $HOME/.zi/bin/zi.zsh ]]; then
+  print -P "%F{33}▓▒░ %F{160}Installing (%F{33}z-shell/zi%F{160})…%f"
+  command mkdir -p "$HOME/.zi" && command chmod go-rwX "$HOME/.zi"
+  command git clone -q --depth=1 --branch "main" https://github.com/z-shell/zi "$HOME/.zi/bin" && \
+    print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+    print -P "%F{160}▓▒░ The clone has failed.%f%b"
+fi
+source "$HOME/.zi/bin/zi.zsh"
+autoload -Uz _zi
+(( ${+_comps} )) && _comps[zi]=_zi
+# examples here -> https://wiki.zshell.dev/ecosystem/category/-annexes
+zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 
-export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+# Load pure theme
+# https://github.com/sindresorhus/pure
+# zi light-mode for @sindresorhus/pure
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+eval "$(starship init zsh)"
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+# zi ice depth=1;
+# zi light romkatv/powerlevel10k
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+# zinit light spaceship-prompt/spaceship-prompt
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
 
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+zinit snippet OMZ::lib/history.zsh
+zinit snippet OMZ::lib/git.zsh
+zinit snippet OMZ::lib/clipboard.zsh
+# zinit snippet OMZ::lib/termsupport.zsh
 
-# Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=30
 
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
+zi ice lucid wait as'completion'
+zi light zsh-users/zsh-completions
+# zinit light zsh-users/zsh-completions
 
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+# zinit light zsh-users/zsh-autosuggestions
+# zinit light zdharma-continuum/fast-syntax-highlighting
+zi ice wait lucid atinit"ZI[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
+zi light z-shell/F-Sy-H
+zi ice wait lucid atload"!_zsh_autosuggest_start"
+zi load zsh-users/zsh-autosuggestions
 
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+zinit light agkozak/zsh-z
+zinit light SukkaW/zsh-gitcd
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+zi ice lucid wait has'fzf'
+zi light Aloxaf/fzf-tab
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
-# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
-COMPLETION_WAITING_DOTS="true"
+zi ice wait lucid
+zi load z-shell/zsh-navigation-tools
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+# zi ice as"completion"
+# zi snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# This speed up zsh-autosuggetions by a lot
-export ZSH_AUTOSUGGEST_USE_ASYNC='true'
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
+omz_plugins=(
     git
-    # osx
-    zsh-autosuggestions
-    # git
-    # zsh-syntax-highlighting
-    # fast-syntax-highlighting
-    F-Sy-H
-    zsh-gitcd
-    # zsh-completion will be added to FPATH directly
-    # zsh-completions
-    zsh-z
-    # zsh-interactive-cd
-    fzf-tab
+    npm
+    yarn
+    sudo
+    extract
+    dotenv
 )
+for plugin in ${omz_plugins[@]}; do
+    zinit snippet OMZP::$plugin
+done
 
+# Switching directories for lazy people
+setopt autocd
+# See: http://zsh.sourceforge.net/Intro/intro_6.html
+setopt autopushd pushdminus pushdsilent pushdtohome pushdignoredups
+
+# Disable correction
+unsetopt correct_all
+unsetopt correct
+DISABLE_CORRECTION="true"
+alias dh='dirs -v'
+
+export LANG=en_US.utf8
+
+# surge proxy
+#export https_proxy=http://127.0.0.1:7890
+#export http_proxy=http://127.0.0.1:7890
+#export all_proxy=socks5://127.0.0.1:7891
+
+# common
 # Set NPM Global Path
 export NPM_CONFIG_PREFIX="$HOME/.npm-global"
 # Create .npm-global folder if not exists
@@ -101,16 +94,9 @@ if (( $+commands[fnm] )); then
     eval "$(fnm env --use-on-cd --shell zsh)"
 fi
 
+
 # Path should be set after fnm
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/openjdk@8/bin:/opt/homebrew/bin:$PATH"
-
-autoload -Uz compinit
-for dump in ~/.zcompdump(N.mh+24); do
-  compinit
-done
-compinit -C
-
-source $ZSH/oh-my-zsh.sh
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/opt/homebrew/bin:$PATH"
 
 # User configuration
 
@@ -119,7 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-alias rezsh="omz reload"
 if (( $+commands[code] )); then
     alias zshconfig="code $HOME/.zshrc"
 elif (( $+commands[we] )); then
@@ -128,25 +113,9 @@ else
     alias zshconfig="nano $HOME/.zshrc"
 fi
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+alias ll="ls -al"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias npm="echo -e '\033[31mERROR: 非必要请勿执行 run 指令！\033[0m'"
 
 # Git Undo
 alias git-undo="git reset --soft HEAD^"
@@ -210,49 +179,6 @@ docker-kill-all() {
 
 cfdns="@1.0.0.1 +tcp"
 
-hash -d desktop="$HOME/Desktop"
-hash -d music="$HOME/Music"
-hash -d pictures="$HOME/Pictures"
-hash -d picture="$HOME/Pictures"
-hash -d downloads="$HOME/Downloads"
-hash -d download="$HOME/Downloads"
-hash -d documents="$HOME/Documents"
-hash -d document="$HOME/Documents"
-hash -d dropbox="$HOME/Dropbox"
-hash -d services="$HOME/Services"
-hash -d projects="$HOME/Project"
-hash -d project="$HOME/Project"
-hash -d tools="$HOME/Tools"
-hash -d tool="$HOME/Tools"
-hash -d applications="/Applications"
-hash -d application="/Applications"
-hash -d surge="$HOME/Library/Application Support/Surge/Profiles"
-hash -d smartdns="$HOME/.config/smartdns"
-
-alias finder_show="defaults write com.apple.finder AppleShowAllFiles YES"
-alias finder_hide="defaults write com.apple.finder AppleShowAllFiles NO"
-clear_finder_icon_cache() {
-    green=$(tput setaf 2)
-    reset=$(tput sgr0)
-    printf "${green}%s${reset}\n" '- Cleaning "/Library/Caches/com.apple.iconservices.store" folder ...'
-    sudo rm -rfv /Library/Caches/com.apple.iconservices.store
-    printf "${green}%s${reset}\n" '- Cleaning "com.apple.dock.iconcache" and "com.apple.dock.iconcache" files ...'
-    sudo find /private/var/folders/ \( -name com.apple.dock.iconcache -or -name com.apple.iconservices \) -exec rm -rfv {} \;
-    sleep 1
-    sudo touch /Applications/*
-    printf "${green}%s${reset}\n" '- Restarting Dock & Finder ...'
-    killall Dock
-    killall Finder
-    sleep 2
-    printf "${green}%s${reset}\n" '- Done!'
-}
-
-clear_dns_cache() {
-    sudo dscacheutil -flushcache
-    sudo killall -HUP mDNSResponder
-    sudo killall mDNSResponderHelper
-}
-
 alias flushdns="clear_dns_cache"
 
 ci-edit-update() {
@@ -314,12 +240,6 @@ git-bk() {
   git branch -c "$br" "backup/$br"
 }
 
-
-brew-fix() {
-    sudo chown -R $(whoami) /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
-    chmod u+w /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
-}
-
 # Kills a process running on a specified tcp port
 killport() {
   echo "Killing process on port: $1"
@@ -366,41 +286,30 @@ extract() {
     fi
 }
 
-update_ohmyzsh_custom_plugins() {
-    red=$(tput setaf 1)
-    blue=$(tput setaf 4)
-    green=$(tput setaf 2)
-    reset=$(tput sgr0)
+# update_ohmyzsh_custom_plugins() {
+#     red=$(tput setaf 1)
+#     blue=$(tput setaf 4)
+#     green=$(tput setaf 2)
+#     reset=$(tput sgr0)
 
-    echo ""
-    printf "${blue}%s${reset}\n" "Upgrading custom plugins"
+#     echo ""
+#     printf "${blue}%s${reset}\n" "Upgrading custom plugins"
 
-    find_folder_by_name "${ZSH_CUSTOM:-$ZSH/custom}" ".git" | while read LINE; do
-        p=${LINE:h}
-        pushd -q "${p}"
+#     find_folder_by_name "${ZSH_CUSTOM:-$ZSH/custom}" ".git" | while read LINE; do
+#         p=${LINE:h}
+#         pushd -q "${p}"
 
-        if git pull --rebase; then
-            printf "${green}%s${reset}\n" "${p:t} has been updated and/or is at the current version."
-        else
-            printf "${red}%s${reset}\n" "There was an error updating ${p:t}. Try again later?"
-        fi
-        popd -q
-    done
-}
+#         if git pull --rebase; then
+#             printf "${green}%s${reset}\n" "${p:t} has been updated and/or is at the current version."
+#         else
+#             printf "${red}%s${reset}\n" "There was an error updating ${p:t}. Try again later?"
+#         fi
+#         popd -q
+#     done
+# }
 
 gig() { curl -L -s https://www.gitignore.io/api/$@;}
 
-# eval "__sukka_original_$(which omz)"
-# unfunction omz
-
-# omz() {
-#     if [[ $1 == update ]]; then
-#         __sukka_original_omz update
-#         update_ohmyzsh_custom_plugins
-#     else
-#         __sukka_original_omz $@
-#     fi
-# }
 
 # Lazyload Function
 
@@ -498,6 +407,89 @@ if (( $+commands[npm] )) &>/dev/null; then
   compdef _npm_completion npm
 fi
 
+
+
+# This speeds up pasting w/ autosuggest
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+
+
+# flutter
+# export PATH="$PATH:/Users/dcc/coding/flutter/bin"
+
+
+# backup my config
+backup_mac(){
+    sh -c $HOME/dotfiles/backup.sh
+#   sh -c $HOME/dotfiles/brew/backup.sh
+}
+
+recover_mac(){
+  brew bundle --file="~/dotfiles/macos/$(whoami)/Brewfile"
+#   sh -c $HOME/dotfiles/brew/brew_my_mac.sh
+}
+
+
+# mac only
+hash -d desktop="$HOME/Desktop"
+hash -d music="$HOME/Music"
+hash -d pictures="$HOME/Pictures"
+hash -d picture="$HOME/Pictures"
+hash -d downloads="$HOME/Downloads"
+hash -d download="$HOME/Downloads"
+hash -d documents="$HOME/Documents"
+hash -d document="$HOME/Documents"
+hash -d dropbox="$HOME/Dropbox"
+hash -d services="$HOME/Services"
+hash -d projects="$HOME/Project"
+hash -d project="$HOME/Project"
+hash -d tools="$HOME/Tools"
+hash -d tool="$HOME/Tools"
+hash -d applications="/Applications"
+hash -d application="/Applications"
+hash -d surge="$HOME/Library/Application Support/Surge/Profiles"
+hash -d smartdns="$HOME/.config/smartdns"
+
+alias finder_show="defaults write com.apple.finder AppleShowAllFiles YES"
+alias finder_hide="defaults write com.apple.finder AppleShowAllFiles NO"
+
+clear_finder_icon_cache() {
+    green=$(tput setaf 2)
+    reset=$(tput sgr0)
+    printf "${green}%s${reset}\n" '- Cleaning "/Library/Caches/com.apple.iconservices.store" folder ...'
+    sudo rm -rfv /Library/Caches/com.apple.iconservices.store
+    printf "${green}%s${reset}\n" '- Cleaning "com.apple.dock.iconcache" and "com.apple.dock.iconcache" files ...'
+    sudo find /private/var/folders/ \( -name com.apple.dock.iconcache -or -name com.apple.iconservices \) -exec rm -rfv {} \;
+    sleep 1
+    sudo touch /Applications/*
+    printf "${green}%s${reset}\n" '- Restarting Dock & Finder ...'
+    killall Dock
+    killall Finder
+    sleep 2
+    printf "${green}%s${reset}\n" '- Done!'
+}
+
+clear_dns_cache() {
+    sudo dscacheutil -flushcache
+    sudo killall -HUP mDNSResponder
+    sudo killall mDNSResponderHelper
+}
+
+brew-fix() {
+    sudo chown -R $(whoami) /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
+    chmod u+w /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
+}
+
 # Add OSX-like shadow to image
 # USAGE: osx-shadow [--rm|-r] <original.png> [result.png]
 osx-shadow() {
@@ -534,44 +526,4 @@ osx-shadow() {
                 ;;
         esac
     fi
-}
-
-# This speeds up pasting w/ autosuggest
-# https://github.com/zsh-users/zsh-autosuggestions/issues/238
-pasteinit() {
-  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
-  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
-}
-
-pastefinish() {
-  zle -N self-insert $OLD_SELF_INSERT
-}
-zstyle :bracketed-paste-magic paste-init pasteinit
-zstyle :bracketed-paste-magic paste-finish pastefinish
-
-
-# autojump j
-# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-# flutter
-# export PATH="$PATH:/Users/dcc/coding/flutter/bin"
-
-# bk() {
-#     cp ~/.zshrc ~/dotfiles/macos/zshrc
-#     # brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/Brewfile"
-#     # sh -c $HOME/dotfiles/brew/backup.sh
-#     sh -c $HOME/dotfiles/backup.sh
-#     # code --list-extensions > ~/dotfiles/_rc/exts.txt
-# }
-
-# backup my config
-backup_mac(){
-    sh -c $HOME/dotfiles/backup.sh
-#   sh -c $HOME/dotfiles/brew/backup.sh
-}
-
-recover_mac(){
-  brew bundle --file="~/dotfiles/macos/$(whoami)/Brewfile"
-
-  sh -c $HOME/dotfiles/install_backup.sh
 }

@@ -9,18 +9,12 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Shell extension to jump to frequently used directories
 brew "autojump"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
-# International domain name library (IDNA2008, Punycode and TR46)
-brew "libidn2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # View disk space usage and delete unwanted data, fast
 brew "dua-cli"
 # Fast and simple Node.js version manager
@@ -31,47 +25,71 @@ brew "git"
 brew "jq"
 # Mac App Store command-line interface
 brew "mas"
+# Development kit for the Java programming language
+brew "openjdk"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Display and control your Android device
+brew "scrcpy"
+# Cross-shell prompt for astronauts
+brew "starship"
 # User interface to the TELNET protocol
 brew "telnet"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Internet file retriever
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 cask "account-switcher"
+# Apple TV Aerial screensaver
+cask "aerial"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Transfer files from and to an Android smartphone
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
+# Chromium based browser
+cask "arc"
+# Alternative GUI for Time Machine
+cask "backuploupe"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Tool to list all active shortcuts of the current application
-cask "cheatsheet"
+# Menu bar icon organizer
+cask "bartender"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Voice and text chat software
 cask "discord"
+# Web browser
+cask "firefox"
+# Free monospaced font with programming ligatures
+cask "font-fira-code"
 # Typeface made for developers
 cask "font-jetbrains-mono"
 # Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
 # GIT client
 cask "fork"
+# Web browser
+cask "google-chrome"
 # Tool to set light or dark appearance on a per-app basis
 cask "gray"
 # Free and open-source media player
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Media system
-cask "jellyfin"
+# Menu bar calendar
+cask "itsycal"
 # File archiver
 cask "keka"
 # Helper application for the Keka file archiver
@@ -80,8 +98,10 @@ cask "kekaexternalhelper"
 cask "keyboardholder"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
-# Simple and elegant markdown editor
+# Markdown editor
 cask "mark-text"
+# Remote desktop client
+cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
@@ -90,6 +110,12 @@ cask "mos"
 cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Remote desktop
+cask "parsec"
 # Tool for uploading images
 cask "picgo"
 # QuickLook plug-in that renders source code with syntax highlighting
@@ -100,9 +126,12 @@ cask "qlimagesize"
 cask "qlmarkdown"
 # QuickLook plugin for plaintext files without an extension
 cask "qlstephen"
+# Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
 # Instant messaging tool
 cask "qq"
+# Chinese music streaming application
+cask "qqmusic"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
 # QuickLook generator for Adobe Swatch Exchange files
@@ -113,10 +142,12 @@ cask "raycast"
 cask "shottr"
 # Snip or pin screenshots
 cask "snipaste"
-# Music streaming service
-cask "spotify"
+# Tool for managing the OpenSSH ssh client configuration file
+cask "ssh-config-editor"
 # System monitor for the menu bar
 cask "stats"
+# Network toolbox
+cask "surge"
 # App to switch hosts
 cask "switchhosts"
 # Terminal emulator, SSH and serial client
@@ -125,8 +156,6 @@ cask "tabby"
 cask "telegram"
 # Finder extension for opening a terminal from the current directory
 cask "termhere"
-# General-purpose text editor
-cask "textmate"
 # Remote control software
 cask "todesk"
 # Open-source code editor
@@ -135,25 +164,27 @@ cask "visual-studio-code"
 cask "vnc-viewer"
 # Rust-based terminal
 cask "warp"
+# QuickLook plugin for webp files
 cask "webpquicklook"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
+# Multiplayer code editor
+cask "zed"
 mas "Bob", id: 1630034110
 mas "Disk Speed Test", id: 425264550
 mas "Dropover", id: 1355679052
-mas "Infuse", id: 1136220934
 mas "Keynote 讲演", id: 409183694
 mas "Magnet", id: 441258766
+mas "Numbers 表格", id: 409203825
+mas "Pages 文稿", id: 409201541
 mas "PasteNow", id: 1552536109
-mas "Playgrounds", id: 1496833156
 mas "PushDeer", id: 1596771139
 mas "RunCat", id: 1429033973
 mas "ServerCat", id: 1501532023
+mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
-mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
 mas "Xnip", id: 1221250572
-mas "企业微信", id: 1189898970
 mas "微信", id: 836500024
 mas "钉钉", id: 1435447041
 mas "飞书", id: 1551632588
