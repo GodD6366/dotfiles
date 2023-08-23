@@ -9,7 +9,8 @@ backup() {
     cp ~/.zshrc ~/dotfiles/macos/$(whoami)/zshrc
 
     echo "Backup brew bundle to ~/dotfiles/macos/$(whoami)/Brewfile"
-    brew bundle dump --describe --force --no-upgrade --file="~/dotfiles/macos/$(whoami)/Brewfile"
+    # 暂时不列出 --whalebrew --vscode
+    brew bundle dump --describe --force --no-upgrade --brews --casks --taps --mas --file="~/dotfiles/macos/$(whoami)/Brewfile"
 
     # echo "Backup brew to ~/dotfiles/brew/backup"
     # sh -c $HOME/dotfiles/brew/backup.sh
