@@ -128,8 +128,6 @@ cask "tabby"
 cask "temurin8"
 # Remote control software
 cask "todesk"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
 # Rust-based terminal
 cask "warp"
 # QuickLook plugin for webp files
