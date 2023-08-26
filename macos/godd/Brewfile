@@ -49,8 +49,6 @@ brew "wget"
 brew "zsh"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Command-line helper for the 1Password password manager
-cask "1password-cli"
 cask "account-switcher"
 # Apple TV Aerial screensaver
 cask "aerial"
