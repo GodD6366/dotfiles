@@ -178,6 +178,7 @@ cask "yesplaymusic"
 cask "zed"
 mas "Bob", id: 1630034110
 mas "Disk Speed Test", id: 425264550
+mas "DockX", id: 6452276577
 mas "Dropover", id: 1355679052
 mas "Keynote 讲演", id: 409183694
 mas "Magnet", id: 441258766
