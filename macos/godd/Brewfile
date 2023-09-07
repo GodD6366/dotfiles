@@ -58,6 +58,8 @@ cask "alt-tab"
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
+# Platform for API documentation, debugging, Mock and testing
+cask "apipost"
 # Application uninstaller
 cask "appcleaner"
 # Chromium based browser
