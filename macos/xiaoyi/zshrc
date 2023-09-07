@@ -79,9 +79,9 @@ alias dh='dirs -v'
 export LANG=en_US.utf8
 
 # surge proxy
-export https_proxy=http://127.0.0.1:7890
-export http_proxy=http://127.0.0.1:7890
-export all_proxy=socks5://127.0.0.1:7891
+# export https_proxy=http://127.0.0.1:7890
+# export http_proxy=http://127.0.0.1:7890
+# export all_proxy=socks5://127.0.0.1:7891
 
 # common
 # Set NPM Global Path
