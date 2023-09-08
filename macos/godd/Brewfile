@@ -16,7 +16,7 @@ brew "libidn2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Pack, ship and run any application as a lightweight container
-brew "docker", link: false
+brew "docker"
 # View disk space usage and delete unwanted data, fast
 brew "dua-cli"
 # Play, record, convert, and stream audio and video
