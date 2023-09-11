@@ -33,7 +33,7 @@ brew "tree"
 brew "wgcf"
 # Internet file retriever
 brew "wget"
-# Command-line helper for the 1Password password manager
+# Command-line interface for 1Password
 cask "1password-cli"
 # Apple TV Aerial screensaver
 cask "aerial"
@@ -151,6 +151,7 @@ mas "PasteNow", id: 1552536109
 mas "PushDeer", id: 1596771139
 mas "RunCat", id: 1429033973
 mas "ServerCat", id: 1501532023
+mas "Silicon Info", id: 1542271266
 mas "Speedtest", id: 1153157709
 mas "Telegram", id: 747648890
 mas "Termius", id: 1176074088
