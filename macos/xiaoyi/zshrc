@@ -529,3 +529,8 @@ osx-shadow() {
         esac
     fi
 }
+
+# 针对当前目录被删除的场景，重新 cd 到当前目录
+recd() {
+  cd $(pwd)
+}
