@@ -84,8 +84,6 @@ cask "microsoft-remote-desktop"
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
-# Music streaming platform
-cask "neteasemusic"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
