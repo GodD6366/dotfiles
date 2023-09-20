@@ -66,6 +66,8 @@ cask "fork"
 cask "google-chrome"
 # Tool to set light or dark appearance on a per-app basis
 cask "gray"
+# Terminal built on web technologies
+cask "hyper"
 # Free and open-source media player
 cask "iina"
 # File archiver
