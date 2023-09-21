@@ -76,6 +76,8 @@ cask "betterdisplay"
 cask "clashx-pro"
 # Voice and text chat software
 cask "discord"
+# Tool to hide status bar icons
+cask "dozer"
 # Web browser
 cask "firefox"
 # Free monospaced font with programming ligatures
