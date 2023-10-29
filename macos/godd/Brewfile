@@ -188,6 +188,7 @@ cask "yesplaymusic"
 cask "zed"
 mas "Actions", id: 1586435171
 mas "Bob", id: 1630034110
+mas "Data Jar", id: 1453273600
 mas "Disk Speed Test", id: 425264550
 mas "DockX", id: 6452276577
 mas "Dropover", id: 1355679052
