@@ -134,6 +134,8 @@ cask "todesk"
 cask "warp"
 # QuickLook plugin for webp files
 cask "webpquicklook"
+# Third-party NetEase cloud player
+cask "yesplaymusic"
 # Multiplayer code editor
 cask "zed"
 mas "1Password for Safari", id: 1569813296
@@ -142,6 +144,7 @@ mas "DockX", id: 6452276577
 mas "Dropover", id: 1355679052
 mas "Flow", id: 1423210932
 mas "Magnet", id: 441258766
+mas "MarginNote 3", id: 1423522373
 mas "MenubarX", id: 1575588022
 mas "Microsoft To Do", id: 1274495053
 mas "Numbers 表格", id: 409203825
