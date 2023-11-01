@@ -110,6 +110,8 @@ cask "keka"
 cask "kekaexternalhelper"
 # Switch input method per application
 cask "keyboardholder"
+# Open-source firewall to block unknown outgoing connections
+cask "lulu"
 # Track and update to the latest versions of installed software
 cask "macupdater"
 # Markdown editor
@@ -196,6 +198,7 @@ mas "Data Jar", id: 1453273600
 mas "Disk Speed Test", id: 425264550
 mas "DockX", id: 6452276577
 mas "Dropover", id: 1355679052
+mas "iMovie 剪辑", id: 408981434
 mas "Infuse", id: 1136220934
 mas "Keynote 讲演", id: 409183694
 mas "LocalSend", id: 1661733229
