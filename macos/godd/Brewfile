@@ -92,6 +92,8 @@ cask "font-jetbrains-mono-nerd-font"
 cask "fork"
 # Web browser
 cask "google-chrome"
+# Graphically shows disk usage within a file system
+cask "grandperspective"
 # Tool to set light or dark appearance on a per-app basis
 cask "gray"
 # Free and open-source media player
@@ -108,6 +110,8 @@ cask "keka"
 cask "kekaexternalhelper"
 # Switch input method per application
 cask "keyboardholder"
+# Track and update to the latest versions of installed software
+cask "macupdater"
 # Markdown editor
 cask "mark-text"
 # Remote desktop client

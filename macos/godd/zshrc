@@ -17,11 +17,10 @@ zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 # zi light-mode for @sindresorhus/pure
 
 eval "$(starship init zsh)"
+zinit light spaceship-prompt/spaceship-prompt
 
-# zi ice depth=1;
-# zi light romkatv/powerlevel10k
-
-# zinit light spaceship-prompt/spaceship-prompt
+zi ice depth=1;
+# zi light romkatv/powerlevel10ks
 
 
 zinit snippet OMZ::lib/history.zsh
@@ -59,7 +58,7 @@ omz_plugins=(
     yarn
     sudo
     extract
-    dotenv
+    # dotenv
 )
 for plugin in ${omz_plugins[@]}; do
     zinit snippet OMZP::$plugin
@@ -114,7 +113,7 @@ else
 fi
 
 
-alias ll="ls -al"
+alias ll="ls -alF --color=auto"
 
 
 # Git Undo
