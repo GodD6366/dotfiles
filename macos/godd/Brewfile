@@ -135,6 +135,8 @@ cask "ngrok"
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# System and utility switches
+cask "only-switch"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Remote desktop
