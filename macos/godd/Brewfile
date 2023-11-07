@@ -8,6 +8,9 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "shaunsingh/sfmono-nerd-font-ligaturized"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # International domain name library (IDNA2008, Punycode and TR46)
@@ -87,6 +90,8 @@ cask "font-fira-code"
 cask "font-jetbrains-mono"
 # Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
+# SFMono with Nerd Font Glyphs and Fira Code Ligatures
+cask "font-sf-mono-nerd-font-ligaturized"
 # GIT client
 cask "fork"
 # Web browser
@@ -115,8 +120,6 @@ cask "keyboardholder"
 cask "lulu"
 # Track and update to the latest versions of installed software
 cask "macupdater"
-# Markdown editor
-cask "mark-text"
 # Remote desktop client
 cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume

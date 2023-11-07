@@ -74,6 +74,7 @@ unsetopt correct_all
 unsetopt correct
 DISABLE_CORRECTION="true"
 alias dh='dirs -v'
+alias asitop='sudo asitop'
 
 export LANG=en_US.utf8
 
