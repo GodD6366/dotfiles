@@ -144,6 +144,8 @@ cask "orbstack"
 cask "parsec"
 # Tool for uploading images
 cask "picgo"
+# Sideload iOS apps and games
+cask "playcover-community"
 # QuickLook plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 # Display image info and preview unsupported formats in QuickLook
