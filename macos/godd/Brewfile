@@ -98,6 +98,8 @@ cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono"
 # Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
+# Superfamily of fonts for code
+cask "font-monaspace"
 # Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
 # SFMono with Nerd Font Glyphs and Fira Code Ligatures
