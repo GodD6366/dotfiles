@@ -128,6 +128,8 @@ cask "keka"
 cask "kekaexternalhelper"
 # Switch input method per application
 cask "keyboardholder"
+# Software for Logitech devices
+cask "logi-options-plus"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
 # Track and update to the latest versions of installed software
