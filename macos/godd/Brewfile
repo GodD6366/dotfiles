@@ -114,6 +114,8 @@ cask "grandperspective"
 cask "gray"
 # A Free, Modern Toolbox Built for Developers.
 cask "he3"
+# Terminal built on web technologies
+cask "hyper"
 # Free and open-source media player
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
