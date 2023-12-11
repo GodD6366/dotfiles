@@ -210,6 +210,8 @@ cask "warp"
 cask "webpquicklook"
 # Wine wrapper built with SwiftUI
 cask "whisky"
+# All-in-one office suite
+cask "wpsoffice"
 # All-in-one office service platform in Chinese
 cask "wpsoffice-cn"
 # Third-party NetEase cloud player
@@ -242,7 +244,7 @@ mas "PushDeer", id: 1596771139
 mas "QQ", id: 451108668
 mas "ServerCat", id: 1501532023
 mas "Silicon Info", id: 1542271266
-mas "Spark", id: 1176895641
+mas "Spark Desktop", id: 6445813049
 mas "Speedtest", id: 1153157709
 mas "TestFlight", id: 899247664
 mas "Thor Launcher", id: 1120999687
