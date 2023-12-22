@@ -88,8 +88,10 @@ export LANG=en_US.utf8
 # common
 # Set NPM Global Path
 export NPM_CONFIG_PREFIX="$HOME/.npm-global"
+export PNPM_HOME="$HOME/.pnpm-global"
 # Create .npm-global folder if not exists
 [[ ! -d "$HOME/.npm-global" ]] && mkdir -p $HOME/.npm-global
+[[ ! -d "$HOME/.pnpm-global" ]] && mkdir -p $HOME/.pnpm-global
 
 # fnm
 if (( $+commands[fnm] )); then
@@ -98,7 +100,7 @@ fi
 
 
 # Path should be set after fnm
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/opt/homebrew/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:/opt/homebrew/bin:$PATH"
 
 # User configuration
 
