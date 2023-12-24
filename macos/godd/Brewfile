@@ -92,6 +92,8 @@ cask "betterdisplay"
 cask "clashx-pro"
 # Voice and text chat software
 cask "discord"
+# Dictionary and translator app
+cask "easydict"
 # Web browser
 cask "firefox"
 # Free monospaced font with programming ligatures
@@ -204,6 +206,8 @@ cask "telegram"
 cask "termhere"
 # Remote control software
 cask "todesk"
+# Virtual machines UI using QEMU
+cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Remote desktop application focusing on security
