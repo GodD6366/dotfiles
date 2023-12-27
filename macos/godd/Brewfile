@@ -208,6 +208,8 @@ cask "todesk"
 cask "topnotch"
 # Virtual machines UI using QEMU
 cask "utm"
+# Plug-in productivity tool set
+cask "utools"
 # Open-source code editor
 cask "visual-studio-code"
 # Remote desktop application focusing on security
