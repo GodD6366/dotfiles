@@ -84,7 +84,7 @@ cask "arc"
 cask "backuploupe"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Menu bar icon organizer
+# Menu bar icon organiser
 cask "bartender"
 # Display management tool
 cask "betterdisplay"
@@ -128,7 +128,7 @@ cask "iina"
 cask "iterm2"
 # Menu bar calendar
 cask "itsycal"
-# Keyboard customizer
+# Keyboard customiser
 cask "karabiner-elements"
 # File archiver
 cask "keka"
@@ -154,7 +154,7 @@ cask "motrix"
 cask "neteasemusic"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# App to write, plan, collaborate, and get organized
+# App to write, plan, collaborate, and get organised
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
