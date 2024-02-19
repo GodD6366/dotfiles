@@ -88,8 +88,6 @@ cask "balenaetcher"
 cask "bartender"
 # Display management tool
 cask "betterdisplay"
-# Tool to run Windows software
-cask "crossover"
 # Voice and text chat software
 cask "discord"
 # Dictionary and translator app
@@ -138,8 +136,6 @@ cask "kekaexternalhelper"
 cask "keyboardholder"
 # Software for Logitech devices
 cask "logi-options-plus"
-# Open-source firewall to block unknown outgoing connections
-cask "lulu"
 # Track and update to the latest versions of installed software
 cask "macupdater"
 # Remote desktop client
