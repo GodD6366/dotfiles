@@ -88,6 +88,8 @@ cask "balenaetcher"
 cask "bartender"
 # Display management tool
 cask "betterdisplay"
+# Rule-based custom proxy with GUI based on clash
+cask "clashx-pro"
 # Voice and text chat software
 cask "discord"
 # Dictionary and translator app
