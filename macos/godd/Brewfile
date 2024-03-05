@@ -5,10 +5,8 @@ tap "cloudflare/cloudflare"
 tap "github/gh"
 tap "he3-app/he3"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 # Interpreted, interactive, object-oriented programming language
@@ -114,6 +112,8 @@ cask "font-sauce-code-pro-nerd-font"
 cask "font-sf-mono-nerd-font-ligaturized"
 # GIT client
 cask "fork"
+# Git client for simultaneous branches on top of your existing workflow
+cask "gitbutler"
 # Web browser
 cask "google-chrome"
 # Graphically shows disk usage within a file system
