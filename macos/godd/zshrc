@@ -54,6 +54,8 @@ zi load z-shell/zsh-navigation-tools
 # zi ice as"completion"
 # zi snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
+zinit light ntnyq/omz-plugin-pnpm
+
 omz_plugins=(
     git
     npm
