@@ -86,8 +86,6 @@ cask "backuploupe"
 cask "balenaetcher"
 # Menu bar icon organiser
 cask "bartender"
-# Display management tool
-cask "betterdisplay"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Universal database tool and SQL client
