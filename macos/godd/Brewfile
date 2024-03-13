@@ -96,6 +96,8 @@ cask "discord"
 cask "easydict"
 # Web browser
 cask "firefox"
+# Version of Cascadia Code without ligatures
+cask "font-cascadia-mono"
 # Free monospaced font with programming ligatures
 cask "font-fira-code"
 # Developer targeted fonts with a high number of glyphs
@@ -107,9 +109,13 @@ cask "font-jetbrains-mono-nerd-font"
 # Superfamily of fonts for code
 cask "font-monaspace"
 # Developer targeted fonts with a high number of glyphs
+cask "font-roboto-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
 # SFMono with Nerd Font Glyphs and Fira Code Ligatures
 cask "font-sf-mono-nerd-font-ligaturized"
+# Developer targeted fonts with a high number of glyphs
+cask "font-victor-mono-nerd-font"
 # GIT client
 cask "fork"
 # Git client for simultaneous branches on top of your existing workflow
