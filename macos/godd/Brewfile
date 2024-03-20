@@ -114,6 +114,7 @@ cask "font-roboto-mono-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
 # SFMono with Nerd Font Glyphs and Fira Code Ligatures
 cask "font-sf-mono-nerd-font-ligaturized"
+cask "font-source-code-pro"
 # Developer targeted fonts with a high number of glyphs
 cask "font-victor-mono-nerd-font"
 # GIT client
