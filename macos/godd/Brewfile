@@ -147,6 +147,8 @@ cask "kekaexternalhelper"
 cask "keyboardholder"
 # Software for Logitech devices
 cask "logi-options-plus"
+# Open-source firewall to block unknown outgoing connections
+cask "lulu"
 # Track and update to the latest versions of installed software
 cask "macupdater"
 # Remote desktop client
@@ -253,6 +255,7 @@ mas "MagicNotch", id: 6447055708
 mas "Magnet", id: 441258766
 mas "MenubarX", id: 1575588022
 mas "Microsoft To Do", id: 1274495053
+mas "NeoServer", id: 6448362669
 mas "Numbers 表格", id: 409203825
 mas "Omi录屏专家", id: 1592987853
 mas "Omnivore", id: 1564031042
