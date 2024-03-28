@@ -8,6 +8,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "mrkai77/cask"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
@@ -147,6 +148,8 @@ cask "kekaexternalhelper"
 cask "keyboardholder"
 # Software for Logitech devices
 cask "logi-options-plus"
+# Radial menu window manager
+cask "loop"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
 # Track and update to the latest versions of installed software
