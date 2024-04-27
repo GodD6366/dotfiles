@@ -8,6 +8,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "lihaoyun6/tap"
 tap "mrkai77/cask"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 # Interpreted, interactive, object-oriented programming language
@@ -69,6 +70,8 @@ cask "1password"
 cask "account-switcher"
 # Apple TV Aerial screensaver
 cask "aerial"
+# Get the battery level of all your devices on your Mac.
+cask "airbattery"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Transfer files from and to an Android smartphone
