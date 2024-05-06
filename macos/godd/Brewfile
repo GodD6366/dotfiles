@@ -82,6 +82,8 @@ cask "android-platform-tools"
 cask "apipost"
 # Application uninstaller
 cask "appcleaner"
+# Control the window brightness of a specific App.
+cask "appdimmer"
 # Chromium based browser
 cask "arc"
 # Alternative GUI for Time Machine
@@ -199,6 +201,8 @@ cask "qqmusic"
 cask "quicklook-json"
 # Quick Look generator for Adobe Swatch Exchange files
 cask "quicklookase"
+# A lightweight and high-performance screen recorder for macOS.
+cask "quickrecorder"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Snip or pin screenshots
