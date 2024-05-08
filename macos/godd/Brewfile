@@ -163,6 +163,8 @@ cask "macupdater"
 cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# GameStream client
+cask "moonlight"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
 # Open-source download manager
