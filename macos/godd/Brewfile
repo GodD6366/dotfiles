@@ -2,6 +2,7 @@ tap "1password/tap"
 tap "bigwig-club/brew"
 tap "buo/cask-upgrade"
 tap "cloudflare/cloudflare"
+tap "felixkratz/formulae"
 tap "github/gh"
 tap "he3-app/he3"
 tap "homebrew/bundle"
@@ -92,6 +93,8 @@ cask "backuploupe"
 cask "balenaetcher"
 # Menu bar icon organiser
 cask "bartender"
+# E-books management software
+cask "calibre"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Universal database tool and SQL client
