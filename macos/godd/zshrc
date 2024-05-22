@@ -551,3 +551,7 @@ unset __conda_setup
 
 # Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+
+
+## 清理重复文件
+alias cleanDuplicateFiles="czkawka_gui"
