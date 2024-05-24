@@ -12,62 +12,6 @@ tap "homebrew/services"
 tap "lihaoyun6/tap"
 tap "mrkai77/cask"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# Shell extension to jump to frequently used directories
-brew "autojump"
-# Cross-platform make
-brew "cmake"
-# International domain name library (IDNA2008, Punycode and TR46)
-brew "libidn2"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
-# Duplicate file utility
-brew "czkawka"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
-# View disk space usage and delete unwanted data, fast
-brew "dua-cli"
-# Fast and simple Node.js version manager
-brew "fnm"
-# Distributed revision control system
-brew "git"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
-# Update of iperf: measures TCP, UDP, and SCTP bandwidth
-brew "iperf3"
-# Lightweight and flexible command-line JSON processor
-brew "jq"
-# Mac App Store command-line interface
-brew "mas"
-# Development kit for the Java programming language
-brew "openjdk"
-# Fast, disk space efficient package manager
-brew "pnpm"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Safe, concurrent, practical language
-brew "rust"
-# Display and control your Android device
-brew "scrcpy"
-# Cross-shell prompt for astronauts
-brew "starship"
-# User interface to the TELNET protocol
-brew "telnet"
-# Programmatically correct mistyped console commands
-brew "thefuck"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
-# Sends magic packets to wake up network-devices
-brew "wakeonlan"
-# Internet file retriever
-brew "wget"
-# UNIX shell (command interpreter)
-brew "zsh"
 # Cloudflare Warp
 brew "cloudflare/cloudflare/warp", link: false
 # Password manager that keeps all passwords secure behind one password
