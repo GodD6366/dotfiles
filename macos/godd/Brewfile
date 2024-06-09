@@ -9,6 +9,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "jesseduffield/lazygit"
 tap "lihaoyun6/tap"
 tap "mrkai77/cask"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
@@ -70,6 +71,8 @@ brew "wget"
 brew "zsh"
 # Cloudflare Warp
 brew "cloudflare/cloudflare/warp", link: false
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazygit/lazygit"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 cask "account-switcher"

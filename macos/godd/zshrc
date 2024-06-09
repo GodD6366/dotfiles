@@ -556,3 +556,6 @@ unset __conda_setup
 
 ## 清理重复文件
 alias cleanDuplicateFiles="czkawka_gui"
+
+# lazygit config
+export XDG_CONFIG_HOME="$HOME/.config"
