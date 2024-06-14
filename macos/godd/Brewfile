@@ -110,26 +110,17 @@ cask "discord"
 cask "easydict"
 # Web browser
 cask "firefox"
-# Version of Cascadia Code without ligatures
 cask "font-cascadia-mono"
-# Free monospaced font with programming ligatures
 cask "font-fira-code"
-# Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
-# Typeface made for developers
 cask "font-jetbrains-mono"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
-# Superfamily of fonts for code
 cask "font-monaspace"
-# Developer targeted fonts with a high number of glyphs
 cask "font-roboto-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
 # SFMono with Nerd Font Glyphs and Fira Code Ligatures
 cask "font-sf-mono-nerd-font-ligaturized"
 cask "font-source-code-pro"
-# Developer targeted fonts with a high number of glyphs
 cask "font-victor-mono-nerd-font"
 # GIT client
 cask "fork"
@@ -308,8 +299,6 @@ mas "Thor Launcher", id: 1120999687
 mas "Today", id: 6443714928
 mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
-mas "Xcode", id: 497799835
-mas "Xnip", id: 1221250572
 mas "效率控", id: 1435159279
 mas "滴答清单", id: 966085870
 mas "百度网盘", id: 547166701
