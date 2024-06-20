@@ -78,8 +78,6 @@ cask "1password"
 cask "account-switcher"
 # Apple TV Aerial screensaver
 cask "aerial"
-# Get the battery level of all your devices on your Mac.
-cask "airbattery"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Transfer files from and to an Android smartphone
@@ -271,6 +269,7 @@ mas "iMovie 剪辑", id: 408981434
 mas "Infuse", id: 1136220934
 mas "Keynote 讲演", id: 409183694
 mas "LocalSend", id: 1661733229
+mas "Longshot", id: 6450262949
 mas "MagicNotch", id: 6447055708
 mas "Magnet", id: 441258766
 mas "Menu Bar Calendar", id: 1558360383
@@ -284,6 +283,7 @@ mas "One Thing", id: 1604176982
 mas "OpenCat", id: 6445999201
 mas "Pages 文稿", id: 409201541
 mas "PasteNow", id: 1552536109
+mas "Picview", id: 6452016140
 mas "Plash", id: 1494023538
 mas "PushDeer", id: 1596771139
 mas "QQ", id: 451108668
