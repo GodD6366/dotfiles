@@ -150,7 +150,7 @@ cask "kekaexternalhelper"
 cask "keyboardholder"
 # Software for Logitech devices
 cask "logi-options-plus"
-# Radial menu window manager
+# Window manager
 cask "loop"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
