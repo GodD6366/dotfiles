@@ -106,6 +106,8 @@ cask "dbeaver-community"
 cask "discord"
 # Dictionary and translator app
 cask "easydict"
+# Status monitoring
+cask "eul"
 # Web browser
 cask "firefox"
 cask "font-cascadia-mono"
@@ -297,6 +299,7 @@ mas "Store Redirect", id: 1601434613
 mas "TestFlight", id: 899247664
 mas "Thor Launcher", id: 1120999687
 mas "Today", id: 6443714928
+mas "uPic", id: 1341586328
 mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
 mas "效率控", id: 1435159279
