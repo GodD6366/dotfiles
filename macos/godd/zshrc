@@ -559,3 +559,6 @@ alias cleanDuplicateFiles="czkawka_gui"
 
 # lazygit config
 export XDG_CONFIG_HOME="$HOME/.config"
+
+# 有赞
+alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
