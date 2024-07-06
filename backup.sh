@@ -6,7 +6,7 @@ export git=/usr/bin/git
 if [ -f ".name" ]; then
   backName=$(cat .name)
 else
-  backName= whoami
+  backName=$(whoami)
 fi
 
 backup_folder_path="$HOME/dotfiles/macos/$backName"
