@@ -1,0 +1,226 @@
+tap "1password/tap"
+tap "bigwig-club/brew"
+tap "buo/cask-upgrade"
+tap "cloudflare/cloudflare"
+tap "github/gh"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/services"
+tap "localsend/localsend"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Shell extension to jump to frequently used directories
+brew "autojump"
+# Cross-platform make
+brew "cmake"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# View disk space usage and delete unwanted data, fast
+brew "dua-cli"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+# Image processing and image analysis library
+brew "leptonica"
+# Multi-format archive and compression library
+brew "libarchive"
+# Compression/decompression library aiming for high speed
+brew "snappy"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Serialization library for C++, supporting Java, C#, and Go
+brew "flatbuffers"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Mac App Store command-line interface
+brew "mas"
+# Development kit for the Java programming language
+brew "openjdk"
+# Light-weight C++ XML processing library
+brew "pugixml"
+# Rich and complete approach to parallelism in C++
+brew "tbb"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Display and control your Android device
+brew "scrcpy"
+# Cross-shell prompt for astronauts
+brew "starship"
+# User interface to the TELNET protocol
+brew "telnet"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
+# Internet file retriever
+brew "wget"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+cask "account-switcher"
+# Apple TV Aerial screensaver
+cask "aerial"
+# Enable Windows-like alt-tab
+cask "alt-tab"
+# Transfer files from and to an Android smartphone
+cask "android-file-transfer"
+# Android SDK component
+cask "android-platform-tools"
+# Platform for API documentation, debugging, Mock and testing
+cask "apipost"
+# Application uninstaller
+cask "appcleaner"
+# Alternative GUI for Time Machine
+cask "backuploupe"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Menu bar icon organiser
+cask "bartender"
+# Display management tool
+cask "betterdisplay"
+# Rule-based custom proxy with GUI based on clash
+cask "clashx-pro"
+# Voice and text chat software
+cask "discord"
+# Tool to hide status bar icons
+cask "dozer"
+# Web browser
+cask "firefox"
+cask "font-fira-code"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+# GIT client
+cask "fork"
+# Web browser
+cask "google-chrome"
+# Tool to set light or dark appearance on a per-app basis
+cask "gray"
+# Terminal built on web technologies
+cask "hyper"
+# Free and open-source media player
+cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Menu bar calendar
+cask "itsycal"
+# Keyboard customiser
+cask "karabiner-elements"
+# File archiver
+cask "keka"
+# Helper application for the Keka file archiver
+cask "kekaexternalhelper"
+# Switch input method per application
+cask "keyboardholder"
+# An open source cross-platform alternative to AirDrop
+cask "localsend"
+# Markdown editor
+cask "mark-text"
+# Web browser
+cask "microsoft-edge"
+# Remote desktop client
+cask "microsoft-remote-desktop"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
+# Smooths scrolling and set mouse scroll directions independently
+cask "mos"
+# Open-source download manager
+cask "motrix"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Remote desktop
+cask "parsec"
+# Tool for uploading images
+cask "picgo"
+# Home media server
+cask "plex-media-server"
+# Quick Look plug-in that renders source code with syntax highlighting
+cask "qlcolorcode"
+# Display image info and preview unsupported formats in QuickLook
+cask "qlimagesize"
+# Quick Look generator for Markdown files
+cask "qlmarkdown"
+# Quick Look plugin for plaintext files without an extension
+cask "qlstephen"
+# Thumbnails, static previews, cover art and metadata for video files
+cask "qlvideo"
+# Instant messaging tool
+cask "qq"
+# Chinese music streaming application
+cask "qqmusic"
+# Quick Look plugin for JSON files
+cask "quicklook-json"
+# Quick Look generator for Adobe Swatch Exchange files
+cask "quicklookase"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Screenshot measurement and annotation tool
+cask "shottr"
+# Snip or pin screenshots
+cask "snipaste"
+# Tool for managing the OpenSSH ssh client configuration file
+cask "ssh-config-editor"
+# System monitor for the menu bar
+cask "stats"
+# Network toolbox
+cask "surge"
+# App to switch hosts
+cask "switchhosts"
+# Terminal emulator, SSH and serial client
+cask "tabby"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Finder extension for opening a terminal from the current directory
+cask "termhere"
+# Remote control software
+cask "todesk"
+# Open-source code editor
+cask "visual-studio-code"
+# Remote desktop application focusing on security
+cask "vnc-viewer"
+# Rust-based terminal
+cask "warp"
+# Quick Look plugin for webp files
+cask "webpquicklook"
+# All-in-one office service platform in Chinese
+cask "wpsoffice-cn"
+# Third-party NetEase cloud player
+cask "yesplaymusic"
+# Multiplayer code editor
+cask "zed"
