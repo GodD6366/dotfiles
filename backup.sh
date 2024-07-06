@@ -3,14 +3,20 @@
 DIR=$HOME/dotfiles
 export git=/usr/bin/git
 
+if [ -f ".name" ]; then
+  backName=$(cat .name)
+else
+  backName= whoami
+fi
+
 # backup my config
 backup() {
-    echo "Backup ~/.zshrc to ~/dotfiles/macos/$(whoami)/zshrc"
-    cp ~/.zshrc ~/dotfiles/macos/$(whoami)/zshrc
+    echo "Backup ~/.zshrc to ~/dotfiles/macos/$backName/zshrc"
+    cp ~/.zshrc ~/dotfiles/macos/$backName/zshrc
 
-    echo "Backup brew bundle to ~/dotfiles/macos/$(whoami)/Brewfile"
+    echo "Backup brew bundle to ~/dotfiles/macos/$backName/Brewfile"
     # 暂时不列出 --whalebrew --vscode
-    brew bundle dump --describe --force --no-upgrade --brews --casks --taps --mas --file="~/dotfiles/macos/$(whoami)/Brewfile"
+    brew bundle dump --describe --force --no-upgrade --brews --casks --taps --mas --file="~/dotfiles/macos/$backName/Brewfile"
 
     # echo "Backup brew to ~/dotfiles/brew/backup"
     # sh -c $HOME/dotfiles/brew/backup.sh
