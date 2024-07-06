@@ -1,5 +1,3 @@
-# Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 if [[ ! -f $HOME/.zi/bin/zi.zsh ]]; then
   print -P "%F{33}▓▒░ %F{160}Installing (%F{33}z-shell/zi%F{160})…%f"
   command mkdir -p "$HOME/.zi" && command chmod go-rwX "$HOME/.zi"
@@ -19,10 +17,11 @@ zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 # zi light-mode for @sindresorhus/pure
 
 eval "$(starship init zsh)"
-zinit light spaceship-prompt/spaceship-prompt
 
-zi ice depth=1;
-# zi light romkatv/powerlevel10ks
+# zi ice depth=1;
+# zi light romkatv/powerlevel10k
+
+# zinit light spaceship-prompt/spaceship-prompt
 
 
 zinit snippet OMZ::lib/history.zsh
@@ -39,7 +38,6 @@ zi light zsh-users/zsh-completions
 # zinit light zdharma-continuum/fast-syntax-highlighting
 zi ice wait lucid atinit"ZI[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
 zi light z-shell/F-Sy-H
-# 和 AmazonQ 冲突
 zi ice wait lucid atload"!_zsh_autosuggest_start"
 zi load zsh-users/zsh-autosuggestions
 
@@ -55,15 +53,13 @@ zi load z-shell/zsh-navigation-tools
 # zi ice as"completion"
 # zi snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
-zinit light ntnyq/omz-plugin-pnpm
-
 omz_plugins=(
     git
     npm
     yarn
     sudo
     extract
-    # dotenv
+    dotenv
 )
 for plugin in ${omz_plugins[@]}; do
     zinit snippet OMZP::$plugin
@@ -79,9 +75,11 @@ unsetopt correct_all
 unsetopt correct
 DISABLE_CORRECTION="true"
 alias dh='dirs -v'
-alias asitop='sudo asitop'
 
 export LANG=en_US.utf8
+
+# AI
+launchctl setenv OLLAMA_HOST "0.0.0.0"
 
 # surge proxy
 #export https_proxy=http://127.0.0.1:7890
@@ -91,10 +89,8 @@ export LANG=en_US.utf8
 # common
 # Set NPM Global Path
 export NPM_CONFIG_PREFIX="$HOME/.npm-global"
-export PNPM_HOME="$HOME/.pnpm-global"
 # Create .npm-global folder if not exists
 [[ ! -d "$HOME/.npm-global" ]] && mkdir -p $HOME/.npm-global
-[[ ! -d "$HOME/.pnpm-global" ]] && mkdir -p $HOME/.pnpm-global
 
 # fnm
 if (( $+commands[fnm] )); then
@@ -103,7 +99,7 @@ fi
 
 
 # Path should be set after fnm
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:/opt/homebrew/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:/opt/homebrew/bin:$PATH"
 
 # User configuration
 
@@ -111,6 +107,9 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFI
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+
+# ollama
+export OLLAMA_HOST="0.0.0.0"
 
 if (( $+commands[code] )); then
     alias zshconfig="code $HOME/.zshrc"
@@ -121,7 +120,7 @@ else
 fi
 
 
-alias ll="ls -alF --color=auto"
+alias ll="ls -al"
 
 
 # Git Undo
@@ -169,11 +168,12 @@ alias sudo='sudo '
 # Avoid stupidity with trash-cli:
 # https://github.com/sindresorhus/trash-cli
 # or use default rm -i
-if (( $+commands[trash] )); then
-  alias rm='trash'
-else
-  alias rm='rm -i'
-fi
+# if (( $+commands[trash] )); then
+#   alias rm='trash'
+# else
+#   alias rm='rm -i'
+# fi
+# alias rm='rm -i'
 
 alias q="cd $HOME && clear"
 
@@ -535,30 +535,3 @@ osx-shadow() {
     fi
 }
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/godd/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/godd/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/godd/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/godd/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
-
-
-## 清理重复文件
-alias cleanDuplicateFiles="czkawka_gui"
-
-# lazygit config
-export XDG_CONFIG_HOME="$HOME/.config"
-
-# 有赞
-alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"

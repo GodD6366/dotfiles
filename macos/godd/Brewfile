@@ -1,19 +1,19 @@
 tap "1password/tap"
-tap "beeftornado/rmtree"
 tap "bigwig-club/brew"
 tap "buo/cask-upgrade"
 tap "cloudflare/cloudflare"
-tap "felixkratz/formulae"
 tap "github/gh"
-tap "he3-app/he3"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
-tap "jesseduffield/lazygit"
-tap "lihaoyun6/tap"
-tap "mrkai77/cask"
-tap "shaunsingh/sfmono-nerd-font-ligaturized"
+tap "localsend/localsend"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Shell extension to jump to frequently used directories
@@ -24,20 +24,34 @@ brew "cmake"
 brew "libidn2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
-# Duplicate file utility
-brew "czkawka"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # View disk space usage and delete unwanted data, fast
 brew "dua-cli"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+# Image processing and image analysis library
+brew "leptonica"
+# Multi-format archive and compression library
+brew "libarchive"
+# Compression/decompression library aiming for high speed
+brew "snappy"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Serialization library for C++, supporting Java, C#, and Go
+brew "flatbuffers"
 # Fast and simple Node.js version manager
 brew "fnm"
 # Distributed revision control system
 brew "git"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
+# Git extension for versioning large files
+brew "git-lfs"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
@@ -46,14 +60,16 @@ brew "jq"
 brew "mas"
 # Development kit for the Java programming language
 brew "openjdk"
-# Fast, disk space efficient package manager
-brew "pnpm"
+# Light-weight C++ XML processing library
+brew "pugixml"
+# Rich and complete approach to parallelism in C++
+brew "tbb"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# Safe, concurrent, practical language
-brew "rust"
 # Display and control your Android device
 brew "scrcpy"
 # Cross-shell prompt for astronauts
@@ -70,10 +86,6 @@ brew "wakeonlan"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Cloudflare Warp
-brew "cloudflare/cloudflare/warp", link: false
-# A simple terminal UI for git commands, written in Go
-brew "jesseduffield/lazygit/lazygit"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 cask "account-switcher"
@@ -89,52 +101,31 @@ cask "android-platform-tools"
 cask "apipost"
 # Application uninstaller
 cask "appcleaner"
-# Control the window brightness of a specific App.
-cask "appdimmer"
-# Chromium based browser
-cask "arc"
 # Alternative GUI for Time Machine
 cask "backuploupe"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Menu bar icon organiser
 cask "bartender"
+# Display management tool
+cask "betterdisplay"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
-# Universal database tool and SQL client
-cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
-# Dictionary and translator app
-cask "easydict"
-# Status monitoring
-cask "eul"
+# Tool to hide status bar icons
+cask "dozer"
 # Web browser
 cask "firefox"
-cask "font-cascadia-mono"
 cask "font-fira-code"
-cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
-cask "font-monaspace"
-cask "font-roboto-mono-nerd-font"
-cask "font-sauce-code-pro-nerd-font"
-# SFMono with Nerd Font Glyphs and Fira Code Ligatures
-cask "font-sf-mono-nerd-font-ligaturized"
-cask "font-source-code-pro"
-cask "font-victor-mono-nerd-font"
 # GIT client
 cask "fork"
-# Git client for simultaneous branches on top of your existing workflow
-cask "gitbutler"
 # Web browser
 cask "google-chrome"
-# Graphically shows disk usage within a file system
-cask "grandperspective"
 # Tool to set light or dark appearance on a per-app basis
 cask "gray"
-# A Free, Modern Toolbox Built for Developers.
-cask "he3"
 # Terminal built on web technologies
 cask "hyper"
 # Free and open-source media player
@@ -151,42 +142,34 @@ cask "keka"
 cask "kekaexternalhelper"
 # Switch input method per application
 cask "keyboardholder"
-# Software for Logitech devices
-cask "logi-options-plus"
-# Window manager
-cask "loop"
-# Open-source firewall to block unknown outgoing connections
-cask "lulu"
-# Track and update to the latest versions of installed software
-cask "macupdater"
+# An open source cross-platform alternative to AirDrop
+cask "localsend"
+# Markdown editor
+cask "mark-text"
+# Web browser
+cask "microsoft-edge"
 # Remote desktop client
 cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
-# GameStream client
-cask "moonlight"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
 # Open-source download manager
 cask "motrix"
-# Music streaming platform
-cask "neteasemusic"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# System and utility switches
-cask "only-switch"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Remote desktop
 cask "parsec"
 # Tool for uploading images
 cask "picgo"
-# Sideload iOS apps and games
-cask "playcover-community"
+# Home media server
+cask "plex-media-server"
 # Quick Look plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 # Display image info and preview unsupported formats in QuickLook
@@ -197,20 +180,20 @@ cask "qlmarkdown"
 cask "qlstephen"
 # Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
+# Instant messaging tool
+cask "qq"
 # Chinese music streaming application
 cask "qqmusic"
 # Quick Look plugin for JSON files
 cask "quicklook-json"
 # Quick Look generator for Adobe Swatch Exchange files
 cask "quicklookase"
-# A lightweight and high-performance screen recorder for macOS.
-cask "quickrecorder"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Screenshot measurement and annotation tool
+cask "shottr"
 # Snip or pin screenshots
 cask "snipaste"
-# Open source cross-platform file explorer
-cask "spacedrive"
 # Tool for managing the OpenSSH ssh client configuration file
 cask "ssh-config-editor"
 # System monitor for the menu bar
@@ -227,12 +210,6 @@ cask "telegram"
 cask "termhere"
 # Remote control software
 cask "todesk"
-# Utility to hide the notch
-cask "topnotch"
-# Virtual machines UI using QEMU
-cask "utm"
-# Plug-in productivity tool set
-cask "utools"
 # Open-source code editor
 cask "visual-studio-code"
 # Remote desktop application focusing on security
@@ -241,74 +218,29 @@ cask "vnc-viewer"
 cask "warp"
 # Quick Look plugin for webp files
 cask "webpquicklook"
-# Free messaging and calling application
-cask "wechat"
-# Wine wrapper built with SwiftUI
-cask "whisky"
 # All-in-one office service platform in Chinese
 cask "wpsoffice-cn"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
 # Multiplayer code editor
 cask "zed"
-mas "1Password for Safari", id: 1569813296
-mas "Actions", id: 1586435171
-mas "AmorphousDiskMark", id: 1168254295
-mas "Barbee", id: 1548711022
-mas "Battery", id: 6476085628
+mas "AJA System Test Lite", id: 1092006274
 mas "Bob", id: 1630034110
-mas "ChatX", id: 6446304087
-mas "Command X", id: 6448461551
-mas "Data Jar", id: 1453273600
-mas "Day Progress", id: 6450280202
 mas "Disk Speed Test", id: 425264550
 mas "DockX", id: 6452276577
-mas "Draw Things", id: 6444050820
 mas "Dropover", id: 1355679052
-mas "Folder Hub", id: 6473019059
-mas "Folder Peek", id: 1615988943
-mas "HEIC Converter", id: 1294126402
-mas "iCopy", id: 1638023723
-mas "Immersive Translate", id: 6447957425
-mas "iMovie 剪辑", id: 408981434
 mas "Infuse", id: 1136220934
-mas "Keynote 讲演", id: 409183694
-mas "LocalSend", id: 1661733229
-mas "Longshot", id: 6450262949
-mas "MagicNotch", id: 6447055708
 mas "Magnet", id: 441258766
-mas "Menu Bar Calendar", id: 1558360383
-mas "MenubarX", id: 1575588022
-mas "Microsoft To Do", id: 1274495053
 mas "NeoServer", id: 6448362669
-mas "Numbers 表格", id: 409203825
-mas "Omi录屏专家", id: 1592987853
-mas "One Thing", id: 1604176982
-mas "OpenCat", id: 6445999201
-mas "Pages 文稿", id: 409201541
 mas "PasteNow", id: 1552536109
-mas "Picview", id: 6452016140
-mas "Plash", id: 1494023538
 mas "PushDeer", id: 1596771139
-mas "QQ", id: 451108668
-mas "ScreenBrush", id: 1233965871
+mas "RunCat", id: 1429033973
 mas "ServerCat", id: 1501532023
-mas "Silicon Info", id: 1542271266
-mas "sing-box", id: 6451272673
-mas "Spark Desktop", id: 6445813049
 mas "Speedtest", id: 1153157709
-mas "Store Redirect", id: 1601434613
 mas "TestFlight", id: 899247664
-mas "Thor Launcher", id: 1120999687
-mas "Today", id: 6443714928
-mas "uPic", id: 1341586328
-mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
-mas "企业微信", id: 1189898970
-mas "效率控", id: 1435159279
-mas "滴答清单", id: 966085870
-mas "百度网盘", id: 547166701
+mas "Xcode", id: 497799835
+mas "Xnip", id: 1221250572
+mas "微信", id: 836500024
 mas "谜底时钟", id: 1536358464
-mas "钉钉", id: 1435447041
 mas "飞书", id: 1551632588
-mas "高德地图", id: 461703208
