@@ -9,34 +9,41 @@ else
   backName= whoami
 fi
 
+backup_folder_path="~/dotfiles/macos/$backName" # 请将 "your_backup_folder_path" 替换为您要检测和创建的文件夹名称
+
+if [! -d "$backup_folder_path" ]; then
+  mkdir "$backup_folder_path"
+  echo "文件夹 $backup_folder_path 已创建"
+fi
+
 # backup my config
 backup() {
-    echo "Backup ~/.zshrc to ~/dotfiles/macos/$backName/zshrc"
-    cp ~/.zshrc ~/dotfiles/macos/$backName/zshrc
+  echo "Backup ~/.zshrc to $backup_folder_path/zshrc"
+  cp ~/.zshrc $backup_folder_path/zshrc
 
-    echo "Backup brew bundle to ~/dotfiles/macos/$backName/Brewfile"
-    # 暂时不列出 --whalebrew --vscode
-    brew bundle dump --describe --force --no-upgrade --brews --casks --taps --mas --file="~/dotfiles/macos/$backName/Brewfile"
+  echo "Backup brew bundle to $backup_folder_path/Brewfile"
+  # 暂时不列出 --whalebrew --vscode
+  brew bundle dump --describe --force --no-upgrade --brews --casks --taps --mas --file="$backup_folder_path/Brewfile"
 
-    # echo "Backup brew to ~/dotfiles/brew/backup"
-    # sh -c $HOME/dotfiles/brew/backup.sh
+  # echo "Backup brew to ~/dotfiles/brew/backup"
+  # sh -c $HOME/dotfiles/brew/backup.sh
 
-    # code --list-extensions > ~/dotfiles/_rc/exts.txt
+  # code --list-extensions > ~/dotfiles/_rc/exts.txt
 }
 
 # > Backup to Github
-backup_to_github(){
-    msg='Backup on: '`date`
-    # echo $msg
-    cd $DIR
+backup_to_github() {
+  msg='Backup on: '$(date)
+  # echo $msg
+  cd $DIR
 
-    if [ -n "$(git status -s)" ];then
-        git pull --rebase
-        git add $DIR/macos
-        git commit -m "$msg"
-        git push --set-upstream origin main
-        git push
-    fi
+  if [ -n "$(git status -s)" ]; then
+    git pull --rebase
+    git add $DIR/macos
+    git commit -m "$msg"
+    git push --set-upstream origin main
+    git push
+  fi
 }
 
 # 备份
