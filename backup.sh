@@ -11,7 +11,8 @@ fi
 
 backup_folder_path="~/dotfiles/macos/$backName" # 请将 "your_backup_folder_path" 替换为您要检测和创建的文件夹名称
 
-if [! -d "$backup_folder_path" ]; then
+if [ -d "$backup_folder_path" ]; then
+else
   mkdir "$backup_folder_path"
   echo "文件夹 $backup_folder_path 已创建"
 fi
