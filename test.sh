@@ -3,7 +3,7 @@
 if [ -f ".name" ]; then
   backName=$(cat .name)
 else
-  backName= whoami
+  backName=$(whoami)
 fi
 
 backup_folder_path="$HOME/dotfiles/macos/$backName" # 请将 "your_backup_folder_path" 替换为您要检测和创建的文件夹名称
