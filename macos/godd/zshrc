@@ -123,6 +123,9 @@ fi
 
 alias ll="ls -alF --color=auto"
 
+# AI ollama
+launchctl setenv OLLAMA_ORIGINS "*"
+launchctl setenv OLLAMA_HOST "0.0.0.0"
 
 # Git Undo
 alias git-undo="git reset --soft HEAD^"
