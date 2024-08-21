@@ -128,7 +128,7 @@ launchctl setenv OLLAMA_ORIGINS "*"
 launchctl setenv OLLAMA_HOST "0.0.0.0"
 launchctl setenv OLLAMA_KEEP_ALIVE "8h"
 launchctl setenv OLLAMA_MAX_LOADED_MODELS 2
-
+launchctl setenv OLLAMA_NUM_PARALLEL 4
 
 
 
