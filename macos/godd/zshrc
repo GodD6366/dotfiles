@@ -130,7 +130,7 @@ launchctl setenv OLLAMA_KEEP_ALIVE "8h"
 launchctl setenv OLLAMA_MAX_LOADED_MODELS 2
 launchctl setenv OLLAMA_NUM_PARALLEL 4
 
-
+export icloud=~/Library/Mobile\ Documents/com\~apple\~CloudDocs
 
 
 # Git Undo
