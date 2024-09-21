@@ -18,8 +18,14 @@ zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
 # https://github.com/sindresorhus/pure
 # zi light-mode for @sindresorhus/pure
 
-eval "$(starship init zsh)"
-zinit light spaceship-prompt/spaceship-prompt
+# if [[ "$TERM_PROGRAM" == "WarpTerminal" ]]; then
+#     # echo "Running in Warp"
+#     # 因为 starship 和 warp 冲突，所以在 warp 里不需要启用 starship
+# else
+  eval "$(starship init zsh)"
+  # zinit light spaceship-prompt/spaceship-prompt
+# fi
+
 
 zi ice depth=1;
 # zi light romkatv/powerlevel10ks
@@ -101,7 +107,6 @@ if (( $+commands[fnm] )); then
     eval "$(fnm env --use-on-cd --shell zsh)"
 fi
 
-
 # Path should be set after fnm
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:/opt/homebrew/bin:$PATH"
 
@@ -120,17 +125,11 @@ else
     alias zshconfig="nano $HOME/.zshrc"
 fi
 
+# 定义 iCloud 文件夹别名
+export icloud=~/Library/Mobile\ Documents/com\~apple\~CloudDocs
+
 
 alias ll="ls -alF --color=auto"
-
-# AI ollama
-launchctl setenv OLLAMA_ORIGINS "*"
-launchctl setenv OLLAMA_HOST "0.0.0.0"
-launchctl setenv OLLAMA_KEEP_ALIVE "8h"
-launchctl setenv OLLAMA_MAX_LOADED_MODELS 2
-launchctl setenv OLLAMA_NUM_PARALLEL 4
-
-export icloud=~/Library/Mobile\ Documents/com\~apple\~CloudDocs
 
 
 # Git Undo
@@ -178,11 +177,11 @@ alias sudo='sudo '
 # Avoid stupidity with trash-cli:
 # https://github.com/sindresorhus/trash-cli
 # or use default rm -i
-if (( $+commands[trash] )); then
-  alias rm='trash'
-else
-  alias rm='rm -i'
-fi
+# if (( $+commands[trash] )); then
+#   alias rm='trash'
+# else
+#   alias rm='rm -i'
+# fi
 
 alias q="cd $HOME && clear"
 
@@ -568,3 +567,7 @@ alias cleanDuplicateFiles="czkawka_gui"
 
 # lazygit config
 export XDG_CONFIG_HOME="$HOME/.config"
+
+# 有赞
+alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
+alias yarn="yarn --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
