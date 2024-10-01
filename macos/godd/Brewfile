@@ -13,6 +13,7 @@ tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "lihaoyun6/tap"
 tap "mac-cleanup/mac-cleanup-py"
+tap "mediar-ai/screenpipe", "https://github.com/mediar-ai/screenpipe.git"
 tap "mrkai77/cask"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "th-ch/youtube-music"
@@ -80,6 +81,8 @@ brew "cloudflare/cloudflare/warp", link: false
 brew "jesseduffield/lazygit/lazygit"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
+# Library to build personalized AI powered by what you've seen, said, or heard.
+brew "mediar-ai/screenpipe/screenpipe"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
