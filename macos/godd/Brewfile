@@ -25,16 +25,14 @@ brew "autojump"
 brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# International domain name library (IDNA2008, Punycode and TR46)
-brew "libidn2"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
-# Duplicate file utility
-brew "czkawka"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # View disk space usage and delete unwanted data, fast
 brew "dua-cli"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Fast and simple Node.js version manager
 brew "fnm"
 # Distributed revision control system
