@@ -108,8 +108,6 @@ cask "bartender"
 cask "bbackupp"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
-# GUI companion app for Homebrew
-cask "cork"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # Voice and text chat software
