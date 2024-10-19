@@ -131,7 +131,6 @@ export icloud=~/Library/Mobile\ Documents/com\~apple\~CloudDocs
 
 alias ll="ls -alF --color=auto"
 
-
 # Git Undo
 alias git-undo="git reset --soft HEAD^"
 # Git Delete Local Merged

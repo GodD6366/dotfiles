@@ -53,6 +53,8 @@ brew "openjdk"
 brew "pnpm"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Python version management
+brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Safe, concurrent, practical language
