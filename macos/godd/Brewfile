@@ -15,6 +15,7 @@ tap "lihaoyun6/tap"
 tap "mac-cleanup/mac-cleanup-py"
 tap "mediar-ai/screenpipe", "https://github.com/mediar-ai/screenpipe.git"
 tap "mrkai77/cask"
+tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "th-ch/youtube-music"
 # Interpreted, interactive, object-oriented programming language
@@ -81,6 +82,8 @@ brew "cloudflare/cloudflare/warp", link: false
 brew "jesseduffield/lazygit/lazygit"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # Library to build personalized AI powered by what you've seen, said, or heard.
 brew "mediar-ai/screenpipe/screenpipe"
 # Password manager that keeps all passwords secure behind one password
