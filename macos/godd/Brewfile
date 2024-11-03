@@ -201,8 +201,6 @@ cask "parsec"
 cask "pearcleaner"
 # Tool for uploading images
 cask "picgo"
-# Sideload iOS apps and games
-cask "playcover-community"
 # Quick Look plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
 # Display image info and preview unsupported formats in QuickLook
@@ -317,7 +315,6 @@ mas "VidHub", id: 1659622164
 mas "Windows App", id: 1295203466
 mas "Xcode", id: 497799835
 mas "企业微信", id: 1189898970
-mas "滴答清单", id: 966085870
 mas "百度网盘", id: 547166701
 mas "谜底时钟", id: 1536358464
 mas "钉钉", id: 1435447041
