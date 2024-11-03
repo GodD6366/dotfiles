@@ -107,8 +107,6 @@ cask "arc"
 cask "backuploupe"
 # Menu bar icon organiser
 cask "bartender"
-# iOS device backup software
-cask "bbackupp"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Universal database tool and SQL client
