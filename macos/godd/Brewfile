@@ -280,8 +280,6 @@ mas "DockX", id: 6452276577
 mas "Draw Things", id: 6444050820
 mas "Dropover", id: 1355679052
 mas "Filmly", id: 6553989480
-mas "Folder Hub", id: 6473019059
-mas "Folder Peek", id: 1615988943
 mas "HEIC Converter", id: 1294126402
 mas "Immersive Translate", id: 6447957425
 mas "Infuse", id: 1136220934
@@ -293,7 +291,6 @@ mas "Menu Bar Calendar", id: 1558360383
 mas "MenubarX", id: 1575588022
 mas "Microsoft To Do", id: 1274495053
 mas "NeoServer", id: 6448362669
-mas "Numbers 表格", id: 409203825
 mas "Omi录屏专家", id: 1592987853
 mas "One Thing", id: 1604176982
 mas "OpenCat", id: 6445999201
@@ -314,7 +311,6 @@ mas "uPic", id: 1341586328
 mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
 mas "Windows App", id: 1295203466
-mas "Xcode", id: 497799835
 mas "企业微信", id: 1189898970
 mas "百度网盘", id: 547166701
 mas "谜底时钟", id: 1536358464
