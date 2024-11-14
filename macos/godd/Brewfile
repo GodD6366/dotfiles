@@ -50,6 +50,8 @@ brew "mas"
 brew "nexttrace"
 # Development kit for the Java programming language
 brew "openjdk"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Fast, disk space efficient package manager
 brew "pnpm"
 # Protocol buffers (Google's data interchange format)
