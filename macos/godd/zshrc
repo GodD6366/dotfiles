@@ -571,3 +571,4 @@ export XDG_CONFIG_HOME="$HOME/.config"
 alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 alias yarn="yarn --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 
+
