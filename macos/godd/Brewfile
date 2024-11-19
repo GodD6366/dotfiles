@@ -276,11 +276,13 @@ mas "Battery", id: 6476085628
 mas "Bob", id: 1630034110
 mas "ChatX", id: 6446304087
 mas "Command X", id: 6448461551
+mas "CotEditor", id: 1024640650
 mas "Data Jar", id: 1453273600
 mas "Disk Speed Test", id: 425264550
 mas "DockX", id: 6452276577
 mas "Draw Things", id: 6444050820
 mas "Dropover", id: 1355679052
+mas "Encrypto", id: 935235287
 mas "Filmly", id: 6553989480
 mas "HEIC Converter", id: 1294126402
 mas "Immersive Translate", id: 6447957425
@@ -301,6 +303,7 @@ mas "PasteNow", id: 1552536109
 mas "Picview", id: 6452016140
 mas "PushDeer", id: 1596771139
 mas "QQ", id: 451108668
+mas "Sequel Ace", id: 1518036000
 mas "ServerCat", id: 1501532023
 mas "sing-box", id: 6451272673
 mas "Spark Desktop", id: 6445813049
