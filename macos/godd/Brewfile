@@ -276,7 +276,6 @@ mas "Battery", id: 6476085628
 mas "Bob", id: 1630034110
 mas "ChatX", id: 6446304087
 mas "Command X", id: 6448461551
-mas "CotEditor", id: 1024640650
 mas "Data Jar", id: 1453273600
 mas "Disk Speed Test", id: 425264550
 mas "DockX", id: 6452276577
@@ -303,7 +302,6 @@ mas "PasteNow", id: 1552536109
 mas "Picview", id: 6452016140
 mas "PushDeer", id: 1596771139
 mas "QQ", id: 451108668
-mas "Sequel Ace", id: 1518036000
 mas "ServerCat", id: 1501532023
 mas "sing-box", id: 6451272673
 mas "Spark Desktop", id: 6445813049
@@ -317,6 +315,5 @@ mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
 mas "Windows App", id: 1295203466
 mas "企业微信", id: 1189898970
-mas "百度网盘", id: 547166701
 mas "谜底时钟", id: 1536358464
 mas "钉钉", id: 1435447041
