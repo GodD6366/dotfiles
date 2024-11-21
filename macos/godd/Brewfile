@@ -175,6 +175,8 @@ cask "loop"
 cask "lulu"
 # Track and update to the latest versions of installed software
 cask "macupdater"
+# Access the menu from anywhere
+cask "menuwhere"
 # Remote desktop client
 cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume
@@ -282,7 +284,6 @@ mas "DockX", id: 6452276577
 mas "Draw Things", id: 6444050820
 mas "Dropover", id: 1355679052
 mas "Encrypto", id: 935235287
-mas "Filmly", id: 6553989480
 mas "HEIC Converter", id: 1294126402
 mas "Immersive Translate", id: 6447957425
 mas "Infuse", id: 1136220934
@@ -315,5 +316,6 @@ mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
 mas "Windows App", id: 1295203466
 mas "企业微信", id: 1189898970
+mas "网易爆米花", id: 6553989480
 mas "谜底时钟", id: 1536358464
 mas "钉钉", id: 1435447041
