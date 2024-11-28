@@ -4,6 +4,7 @@ tap "beeftornado/rmtree"
 tap "bigwig-club/brew"
 tap "buo/cask-upgrade"
 tap "cloudflare/cloudflare"
+tap "ecopastehub/ecopaste"
 tap "felixkratz/formulae"
 tap "github/gh"
 tap "he3-app/he3"
@@ -119,6 +120,8 @@ cask "dbeaver-community"
 cask "discord"
 # Dictionary and translator app
 cask "easydict"
+# Open source clipboard management tools for Windows, Macos and Linux(x11)
+cask "ecopaste"
 # Web browser
 cask "firefox"
 cask "font-cascadia-mono"
