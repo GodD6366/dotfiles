@@ -167,6 +167,8 @@ cask "keka"
 cask "kekaexternalhelper"
 # Switch input method per application
 cask "keyboardholder"
+# Open-source keystroke visualiser
+cask "keycastr"
 # Utility that shows the latest app updates
 cask "latest"
 # Software for Logitech devices
@@ -249,6 +251,8 @@ cask "telegram"
 cask "termhere"
 # Remote control software
 cask "todesk"
+# Pin any window to the top of your screen.
+cask "topit"
 # Utility to hide the notch
 cask "topnotch"
 # Virtual machines UI using QEMU
