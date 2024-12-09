@@ -207,8 +207,6 @@ cask "obsidian"
 cask "only-switch"
 # Replacement for Docker Desktop
 cask "orbstack"
-# Remote desktop
-cask "parsec"
 # Utility to uninstall apps and remove leftover files from old/uninstalled apps
 cask "pearcleaner"
 # Tool for uploading images
@@ -257,8 +255,6 @@ cask "todesk"
 cask "topit"
 # Utility to hide the notch
 cask "topnotch"
-# Virtual machines UI using QEMU
-cask "utm"
 # Plug-in productivity tool set
 cask "utools"
 # Open-source code editor
