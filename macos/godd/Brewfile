@@ -257,8 +257,6 @@ cask "topnotch"
 cask "utools"
 # Open-source code editor
 cask "visual-studio-code"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
 # Rust-based terminal
 cask "warp"
 # Quick Look plugin for webp files
