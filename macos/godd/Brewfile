@@ -177,8 +177,6 @@ cask "logi-options+"
 cask "logoer"
 # Window manager
 cask "loop"
-# Open-source firewall to block unknown outgoing connections
-cask "lulu"
 # Track and update to the latest versions of installed software
 cask "macupdater"
 # Access the menu from anywhere
@@ -253,8 +251,6 @@ cask "todesk"
 cask "topit"
 # Utility to hide the notch
 cask "topnotch"
-# Plug-in productivity tool set
-cask "utools"
 # Open-source code editor
 cask "visual-studio-code"
 # Rust-based terminal
