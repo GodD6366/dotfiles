@@ -88,6 +88,7 @@ alias dh='dirs -v'
 alias asitop='sudo asitop'
 
 export LANG=en_US.utf8
+# export LANG=zh_CN.UTF-8
 
 # surge proxy
 #export https_proxy=http://127.0.0.1:7890
@@ -570,5 +571,3 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # 有赞
 alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 alias yarn="yarn --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
-
-
