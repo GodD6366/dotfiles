@@ -124,8 +124,6 @@ cask "dbeaver-community"
 cask "discord"
 # Dictionary and translator app
 cask "easydict"
-# Open source clipboard management tools for Windows, Macos and Linux(x11)
-cask "ecopaste"
 # Web browser
 cask "firefox"
 cask "font-cascadia-mono"
