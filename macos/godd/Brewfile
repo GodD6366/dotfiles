@@ -19,6 +19,7 @@ tap "mrkai77/cask"
 tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "th-ch/youtube-music"
+tap "ybeapps/sourcegit"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Shell extension to jump to frequently used directories
@@ -229,6 +230,8 @@ cask "quickrecorder"
 cask "raycast"
 # Snip or pin screenshots
 cask "snipaste"
+# Open-source Git GUI client
+cask "sourcegit"
 # Open source cross-platform file explorer
 cask "spacedrive"
 # Tool for managing the OpenSSH ssh client configuration file
