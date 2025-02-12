@@ -156,8 +156,6 @@ cask "hyper"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Menu bar calendar
-cask "itsycal"
 # Menu bar manager
 cask "jordanbaird-ice"
 # Keyboard customiser
@@ -238,8 +236,6 @@ cask "snipaste"
 cask "sourcegit"
 # Open source cross-platform file explorer
 cask "spacedrive"
-# Tool for managing the OpenSSH ssh client configuration file
-cask "ssh-config-editor"
 # System monitor for the menu bar
 cask "stats"
 # Network toolbox
@@ -316,5 +312,4 @@ mas "Windows App", id: 1295203466
 mas "Xnip", id: 1221250572
 mas "企业微信", id: 1189898970
 mas "网易爆米花", id: 6553989480
-mas "谜底时钟", id: 1536358464
 mas "钉钉", id: 1435447041
