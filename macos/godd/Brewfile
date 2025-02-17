@@ -119,6 +119,8 @@ cask "bartender"
 cask "bbackupp"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
+# Browser for SQLite databases
+cask "db-browser-for-sqlite"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # Voice and text chat software
