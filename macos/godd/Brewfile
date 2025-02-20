@@ -266,8 +266,6 @@ cask "webpquicklook"
 cask "wechat"
 # Wine wrapper built with SwiftUI
 cask "whisky"
-# All-in-one office service platform in Chinese
-cask "wpsoffice-cn"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
 # YouTube Music Desktop App
