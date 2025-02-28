@@ -138,7 +138,6 @@ cask "font-monaspace"
 cask "font-monaspace-nerd-font"
 cask "font-roboto-mono-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
-# SFMono with Nerd Font Glyphs and Fira Code Ligatures
 cask "font-sf-mono-nerd-font-ligaturized"
 cask "font-source-code-pro"
 cask "font-victor-mono-nerd-font"
