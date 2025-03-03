@@ -442,6 +442,9 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # flutter
 # export PATH="$PATH:/Users/dcc/coding/flutter/bin"
 
+# uv uvx
+export PATH="$PATH:$HOME/.local/bin/env"
+
 
 # backup my config
 backup_mac(){
@@ -571,3 +574,12 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # 有赞
 alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 alias yarn="yarn --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
+
+
+# 加载python环境
+alias python="python3"
+alias pip="pip3"
+conda activate base
+
+. "$HOME/.local/bin/env"
+
