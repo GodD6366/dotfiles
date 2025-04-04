@@ -178,8 +178,6 @@ cask "logi-options+"
 cask "logoer"
 # Window manager
 cask "loop"
-# Open-source firewall to block unknown outgoing connections
-cask "lulu"
 # Track and update to the latest versions of installed software
 cask "macupdater"
 # Access the menu from anywhere
@@ -234,8 +232,6 @@ cask "raycast"
 cask "reminders-menubar"
 # Snip or pin screenshots
 cask "snipaste"
-# Open-source Git GUI client
-cask "sourcegit"
 # Open source cross-platform file explorer
 cask "spacedrive"
 # System monitor for the menu bar
