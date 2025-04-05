@@ -24,6 +24,8 @@ tap "ybeapps/sourcegit"
 brew "python@3.11"
 # Shell extension to jump to frequently used directories
 brew "autojump"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
 # Cross-platform make
 brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -48,12 +50,16 @@ brew "go"
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Common error values for all GnuPG components
+brew "libgpg-error"
 # Mac App Store command-line interface
 brew "mas"
 # Open source visual route tracking CLI tool
 brew "nexttrace"
 # Development kit for the Java programming language
 brew "openjdk"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Fast, disk space efficient package manager
@@ -115,8 +121,6 @@ cask "arc"
 cask "backuploupe"
 # Menu bar icon organiser
 cask "bartender"
-# iOS device backup software
-cask "bbackupp"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Browser for SQLite databases
@@ -150,8 +154,6 @@ cask "gitbutler"
 cask "google-chrome"
 # Tool to set light or dark appearance on a per-app basis
 cask "gray"
-# A Free, Modern Toolbox Built for Developers.
-cask "he3"
 # Terminal built on web technologies
 cask "hyper"
 # Free and open-source media player
