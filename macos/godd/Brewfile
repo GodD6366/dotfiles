@@ -270,3 +270,19 @@ cask "yesplaymusic"
 cask "youtube-music"
 # Multiplayer code editor
 cask "zed"
+mas "1Password for Safari", id: 1569813296
+mas "Bob", id: 1630034110
+mas "Command X", id: 6448461551
+mas "Data Jar", id: 1453273600
+mas "Folder Preview", id: 6698876601
+mas "Longshot", id: 6450262949
+mas "OpenCat", id: 6445999201
+mas "PasteNow", id: 1552536109
+mas "Picview", id: 6452016140
+mas "PushDeer", id: 1596771139
+mas "QQ", id: 451108668
+mas "Spark Desktop", id: 6445813049
+mas "Termius", id: 1176074088
+mas "Velja", id: 1607635845
+mas "企业微信", id: 1189898970
+mas "网易爆米花", id: 6553989480
