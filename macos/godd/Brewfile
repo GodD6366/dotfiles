@@ -266,6 +266,8 @@ cask "wechat"
 cask "whisky"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
+# YouTube Music Desktop App
+cask "youtube-music"
 # Multiplayer code editor
 cask "zed"
 mas "1Password for Safari", id: 1569813296
