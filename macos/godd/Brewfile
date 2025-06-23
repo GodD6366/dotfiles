@@ -159,8 +159,6 @@ cask "iina"
 cask "iterm2"
 # Menu bar manager
 cask "jordanbaird-ice"
-# Keyboard customiser
-cask "karabiner-elements"
 # File archiver
 cask "keka"
 # Helper application for the Keka file archiver
@@ -171,8 +169,6 @@ cask "keyboardholder"
 cask "keycastr"
 # Utility that shows the latest app updates
 cask "latest"
-# Software for Logitech devices
-cask "logi-options+"
 # Change the style of the Apple logo in macOS menu bar.
 cask "logoer"
 # Window manager
@@ -187,8 +183,6 @@ cask "microsoft-remote-desktop"
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
-# Open-source download manager
-cask "motrix"
 # Music streaming platform
 cask "neteasemusic"
 # Reverse proxy, secure introspectable tunnels to localhost
