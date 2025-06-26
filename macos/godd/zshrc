@@ -585,3 +585,6 @@ conda activate base
 
 # gemini-cli
 export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
+
+# Added by Comate
+export PATH="/Users/godd/.comate/bin:$PATH"
