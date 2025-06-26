@@ -583,3 +583,5 @@ conda activate base
 
 . "$HOME/.local/bin/env"
 
+# gemini-cli
+export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
