@@ -155,8 +155,6 @@ cask "gray"
 cask "hyper"
 # Free and open-source media player
 cask "iina"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Menu bar manager
 cask "jordanbaird-ice"
 # File archiver
