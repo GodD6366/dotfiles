@@ -114,10 +114,6 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFI
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# Claude code
-export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
-export ANTHROPIC_BASE_URL=https://anyrouter.top
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -580,7 +576,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 # 有赞
 alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
-alias yarn="yarn --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
+alias yyarn="yarn --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 alias npx="npx --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 
 # 加载python环境
@@ -592,6 +588,10 @@ conda activate base
 
 # gemini-cli
 export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
+
+# Claude code
+# export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
+# export ANTHROPIC_BASE_URL=https://anyrouter.top
 
 # Added by Comate
 export PATH="/Users/godd/.comate/bin:$PATH"
