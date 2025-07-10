@@ -55,6 +55,8 @@ brew "libgpg-error"
 brew "mas"
 # Open source visual route tracking CLI tool
 brew "nexttrace"
+# Platform built on V8 to build network applications
+brew "node"
 # Development kit for the Java programming language
 brew "openjdk"
 # Pinentry for GPG on Mac
@@ -122,6 +124,8 @@ cask "backuploupe"
 cask "bartender"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
 # Universal database tool and SQL client
