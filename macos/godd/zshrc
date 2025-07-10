@@ -590,8 +590,8 @@ conda activate base
 export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
 
 # Claude code
-# export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
-# export ANTHROPIC_BASE_URL=https://anyrouter.top
+export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
+export ANTHROPIC_BASE_URL=https://anyrouter.top
 
 # Added by Comate
 export PATH="/Users/godd/.comate/bin:$PATH"
