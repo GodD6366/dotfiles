@@ -55,8 +55,6 @@ brew "libgpg-error"
 brew "mas"
 # Open source visual route tracking CLI tool
 brew "nexttrace"
-# Platform built on V8 to build network applications
-brew "node"
 # Development kit for the Java programming language
 brew "openjdk"
 # Pinentry for GPG on Mac
