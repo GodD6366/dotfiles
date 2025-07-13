@@ -586,13 +586,6 @@ conda activate base
 
 . "$HOME/.local/bin/env"
 
-# gemini-cli
-export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
-
-# Claude code
-export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
-export ANTHROPIC_BASE_URL=https://anyrouter.top
-
 # Added by Comate
 export PATH="/Users/godd/.comate/bin:$PATH"
 
@@ -602,3 +595,11 @@ export NVM_DIR="$HOME/.config/nvm"
 
 # bun completions
 [ -s "/Users/godd/.bun/_bun" ] && source "/Users/godd/.bun/_bun"
+
+# gemini-cli
+export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
+
+# Claude code
+# export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
+# export ANTHROPIC_BASE_URL=https://anyrouter.top
+# alias myclaude="export ANTHROPIC_AUTH_TOKEN=sk-xa4Zgli4ksu7qCEO75WLk4otLOwPyA5tko3P9QW9QOOAoIil && export ANTHROPIC_BASE_URL=https://ai-api.godd.site:6443 && claude"
