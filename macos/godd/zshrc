@@ -603,3 +603,5 @@ export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
 # export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
 # export ANTHROPIC_BASE_URL=https://anyrouter.top
 # alias myclaude="export ANTHROPIC_AUTH_TOKEN=sk-xa4Zgli4ksu7qCEO75WLk4otLOwPyA5tko3P9QW9QOOAoIil && export ANTHROPIC_BASE_URL=https://ai-api.godd.site:6443 && claude"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
