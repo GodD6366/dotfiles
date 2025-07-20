@@ -249,10 +249,6 @@ cask "wechat"
 cask "whisky"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
-# YouTube Music Desktop App
-cask "youtube-music"
-# Multiplayer code editor
-cask "zed"
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AmorphousDiskMark", id: 1168254295
@@ -277,7 +273,6 @@ mas "Pages文稿", id: 409201541
 mas "PasteNow", id: 1552536109
 mas "PushDeer", id: 1596771139
 mas "QQ", id: 451108668
-mas "Spark Desktop", id: 6445813049
 mas "Speedtest", id: 1153157709
 mas "Termius", id: 1176074088
 mas "TestFlight", id: 899247664
