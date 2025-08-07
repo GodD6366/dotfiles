@@ -49,6 +49,8 @@ brew "go"
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Mac App Store command-line interface
@@ -91,8 +93,6 @@ brew "wget"
 brew "zsh"
 # Cloudflare Warp
 brew "cloudflare/cloudflare/warp", link: false
-# A simple terminal UI for git commands, written in Go
-brew "jesseduffield/lazygit/lazygit"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
