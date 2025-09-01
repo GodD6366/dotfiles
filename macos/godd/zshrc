@@ -549,25 +549,6 @@ osx-shadow() {
     fi
 }
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
-
-
 ## 清理重复文件
 alias cleanDuplicateFiles="czkawka_gui"
 
@@ -582,7 +563,6 @@ alias npx="npx --registry=http://registry.npm.qima-inc.com --disturl=http://npm.
 # 加载python环境
 alias python="python3"
 alias pip="pip3"
-conda activate base
 
 . "$HOME/.local/bin/env"
 
