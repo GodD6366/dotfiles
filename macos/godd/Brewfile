@@ -3,7 +3,6 @@ tap "alienator88/cask"
 tap "beeftornado/rmtree"
 tap "bigwig-club/brew"
 tap "buo/cask-upgrade"
-tap "cloudflare/cloudflare"
 tap "ecopastehub/ecopaste"
 tap "felixkratz/formulae"
 tap "github/gh"
@@ -93,8 +92,6 @@ brew "wakeonlan"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Cloudflare Warp
-brew "cloudflare/cloudflare/warp", link: false
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
