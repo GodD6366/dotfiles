@@ -26,6 +26,8 @@ brew "autojump"
 brew "gettext"
 # Cross-platform make
 brew "cmake"
+# OpenAI's coding agent that runs in your terminal
+brew "codex"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Pack, ship and run any application as a lightweight container
