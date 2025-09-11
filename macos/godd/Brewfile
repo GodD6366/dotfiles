@@ -60,12 +60,14 @@ brew "libgpg-error"
 brew "mas"
 # Open source visual route tracking CLI tool
 brew "nexttrace"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Node.js version manager
+brew "nodenv"
 # Development kit for the Java programming language
 brew "openjdk"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
 # Fast, disk space efficient package manager
 brew "pnpm"
 # Protocol buffers (Google's data interchange format)
@@ -276,6 +278,8 @@ mas "Spark Desktop", id: 6445813049
 mas "Speedtest", id: 1153157709
 mas "Termius", id: 1176074088
 mas "TestFlight", id: 899247664
+mas "Tomito", id: 1526042938
+mas "TotalPause", id: 6482185943
 mas "uPic", id: 1341586328
 mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164

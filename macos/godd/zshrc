@@ -103,16 +103,21 @@ export PNPM_HOME="$HOME/.pnpm-global"
 [[ ! -d "$HOME/.npm-global" ]] && mkdir -p $HOME/.npm-global
 [[ ! -d "$HOME/.pnpm-global" ]] && mkdir -p $HOME/.pnpm-global
 
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
 # fnm
-if (( $+commands[fnm] )); then
-    eval "$(fnm env --use-on-cd --shell zsh)"
-fi
+# export FNM_FILE_PRIORITY=".node-version:.nvmrc"
+# if (( $+commands[fnm] )); then
+#     eval "$(fnm env --use-on-cd --shell zsh --version-file-strategy=recursive)"
+# fi
 
 # Path should be set after fnm
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:/opt/homebrew/bin:$PATH"
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # User configuration
 
