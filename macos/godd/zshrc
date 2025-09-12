@@ -104,14 +104,14 @@ export PNPM_HOME="$HOME/.pnpm-global"
 [[ ! -d "$HOME/.pnpm-global" ]] && mkdir -p $HOME/.pnpm-global
 
 # nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
+# export PATH="$HOME/.nodenv/bin:$PATH"
+# eval "$(nodenv init -)"
 
 # fnm
-# export FNM_FILE_PRIORITY=".node-version:.nvmrc"
-# if (( $+commands[fnm] )); then
-#     eval "$(fnm env --use-on-cd --shell zsh --version-file-strategy=recursive)"
-# fi
+export FNM_FILE_PRIORITY=".node-version:.nvmrc"
+if (( $+commands[fnm] )); then
+    eval "$(fnm env --use-on-cd --shell zsh --version-file-strategy=recursive)"
+fi
 
 # Path should be set after fnm
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:/opt/homebrew/bin:$PATH"
