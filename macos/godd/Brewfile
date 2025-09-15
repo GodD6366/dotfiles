@@ -16,6 +16,7 @@ tap "mediar-ai/screenpipe", "https://github.com/mediar-ai/screenpipe.git"
 tap "mrkai77/cask"
 tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
+tap "sst/tap"
 tap "th-ch/youtube-music"
 tap "ybeapps/sourcegit"
 # Interpreted, interactive, object-oriented programming language
@@ -100,6 +101,8 @@ brew "zsh"
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
+# The AI coding agent built for the terminal.
+brew "sst/tap/opencode"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
