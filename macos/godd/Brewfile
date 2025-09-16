@@ -62,7 +62,9 @@ brew "mas"
 # Open source visual route tracking CLI tool
 brew "nexttrace"
 # Package compiler and linker metadata toolkit
-brew "pkgconf", link: false
+brew "pkgconf"
+# Install NodeJS versions
+brew "node-build"
 # Node.js version manager
 brew "nodenv"
 # Development kit for the Java programming language
