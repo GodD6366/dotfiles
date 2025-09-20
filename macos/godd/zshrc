@@ -554,6 +554,24 @@ osx-shadow() {
     fi
 }
 
+get_fps() {
+  if [ -z "$1" ]; then
+    echo "用法: get_fps <video_file>"
+    return 1
+  fi
+
+  ffprobe -v quiet -select_streams v:0 \
+    -show_entries stream=avg_frame_rate \
+    -of csv=p=0 "$1" \
+  | awk -F'/' '{
+      if ($2=="" || $2==0) {
+        print $1
+      } else {
+        printf "%.2f\n", $1/$2
+      }
+    }'
+}
+
 ## 清理重复文件
 alias cleanDuplicateFiles="czkawka_gui"
 
