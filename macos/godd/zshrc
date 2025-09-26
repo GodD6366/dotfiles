@@ -608,5 +608,5 @@ export NVM_DIR="$HOME/.config/nvm"
 
 export EDITOR=cursor
 # Added by claude-code-config
-export GEMINI_API_KEY="AIzaSyBXlvbwiO6FW4l1boMdKp66AkEcqelSB8s"
+export GEMINI_API_KEY="AIzaSyBJ6OJLmMNW7WB9vKPh9tXYsINU7eTRZmc"
 export PATH="$HOME/.local/bin:$PATH"
