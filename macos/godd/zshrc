@@ -610,3 +610,7 @@ export EDITOR=cursor
 # Added by claude-code-config
 export GEMINI_API_KEY="AIzaSyBJ6OJLmMNW7WB9vKPh9tXYsINU7eTRZmc"
 export PATH="$HOME/.local/bin:$PATH"
+
+
+# Added by CodeBuddy
+export PATH="/Users/godd/.codebuddy/bin:$PATH"

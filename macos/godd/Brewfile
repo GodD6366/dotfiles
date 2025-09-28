@@ -257,8 +257,6 @@ cask "wechat"
 cask "whisky"
 # Third-party NetEase cloud player
 cask "yesplaymusic"
-# YouTube Music Desktop App
-cask "youtube-music"
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AmorphousDiskMark", id: 1168254295
@@ -289,4 +287,5 @@ mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
 mas "Windows App", id: 1295203466
 mas "Xnip", id: 1221250572
+mas "小米互联服务", id: 6673908449
 mas "沉浸式翻译", id: 6447957425
