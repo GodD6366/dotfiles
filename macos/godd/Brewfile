@@ -159,6 +159,8 @@ cask "fork"
 cask "gitbutler"
 # Web browser
 cask "google-chrome"
+# Web browser
+cask "google-chrome@beta"
 # Tool to set light or dark appearance on a per-app basis
 cask "gray"
 # Terminal built on web technologies
