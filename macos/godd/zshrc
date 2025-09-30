@@ -599,18 +599,10 @@ export NVM_DIR="$HOME/.config/nvm"
 # bun completions
 [ -s "/Users/godd/.bun/_bun" ] && source "/Users/godd/.bun/_bun"
 
-# Claude code
-# export ANTHROPIC_AUTH_TOKEN=sk-ZIkmZqoV0JMTg6KuPdrMUP5tKyodZtI2jOoaSs6TZ1faPUvn
-# export ANTHROPIC_BASE_URL=https://anyrouter.top
-# alias myclaude="export ANTHROPIC_AUTH_TOKEN=sk-xa4Zgli4ksu7qCEO75WLk4otLOwPyA5tko3P9QW9QOOAoIil && export ANTHROPIC_BASE_URL=https://ai-api.godd.site:6443 && claude"
-
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
-
-export EDITOR=cursor
-# Added by claude-code-config
-export GEMINI_API_KEY="AIzaSyBJ6OJLmMNW7WB9vKPh9tXYsINU7eTRZmc"
 export PATH="$HOME/.local/bin:$PATH"
-
 
 # Added by CodeBuddy
 export PATH="/Users/godd/.codebuddy/bin:$PATH"
+
+export EDITOR=code
+alias edit="zed"
