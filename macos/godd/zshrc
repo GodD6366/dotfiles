@@ -601,8 +601,5 @@ export NVM_DIR="$HOME/.config/nvm"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Added by CodeBuddy
-export PATH="/Users/godd/.codebuddy/bin:$PATH"
-
 export EDITOR=code
-alias edit="zed"
+alias edit="code"
