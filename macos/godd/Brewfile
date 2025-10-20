@@ -27,8 +27,6 @@ brew "autojump"
 brew "gettext"
 # Cross-platform make
 brew "cmake"
-# OpenAI's coding agent that runs in your terminal
-brew "codex"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Pack, ship and run any application as a lightweight container
@@ -132,6 +130,8 @@ cask "bartender"
 cask "clashx-pro"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
 # Universal database tool and SQL client
@@ -257,8 +257,6 @@ cask "webpquicklook"
 cask "wechat"
 # Wine wrapper built with SwiftUI
 cask "whisky"
-# Third-party NetEase cloud player
-cask "yesplaymusic"
 # YouTube Music Desktop App
 cask "youtube-music"
 mas "1Password for Safari", id: 1569813296
