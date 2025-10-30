@@ -134,8 +134,6 @@ cask "claude"
 cask "codex"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
-# Universal database tool and SQL client
-cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
 # Web browser
@@ -281,9 +279,7 @@ mas "PushDeer", id: 1596771139
 mas "QQ", id: 451108668
 mas "Spark Desktop", id: 6445813049
 mas "Speedtest", id: 1153157709
-mas "Termius", id: 1176074088
 mas "TestFlight", id: 899247664
-mas "Tomito", id: 1526042938
 mas "uPic", id: 1341586328
 mas "Velja", id: 1607635845
 mas "VidHub", id: 1659622164
