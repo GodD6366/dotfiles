@@ -600,5 +600,6 @@ export NVM_DIR="$HOME/.config/nvm"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export EDITOR=code
-alias edit="code"
+export GIT_MERGE_AUTOEDIT=no
+export EDITOR=cursor
+alias edit="cursor"
