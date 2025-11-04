@@ -130,6 +130,8 @@ cask "bartender"
 cask "clashx-pro"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Browser for SQLite databases
