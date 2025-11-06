@@ -103,15 +103,10 @@ export PNPM_HOME="$HOME/.pnpm-global"
 [[ ! -d "$HOME/.npm-global" ]] && mkdir -p $HOME/.npm-global
 [[ ! -d "$HOME/.pnpm-global" ]] && mkdir -p $HOME/.pnpm-global
 
-# nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
-# fnm
-# export FNM_FILE_PRIORITY=".node-version:.nvmrc"
-# if (( $+commands[fnm] )); then
-#     eval "$(fnm env --use-on-cd --shell zsh --version-file-strategy=recursive)"
-# fi
+export FNM_FILE_PRIORITY=".node-version:.nvmrc"
+if (( $+commands[fnm] )); then
+    eval "$(fnm env --use-on-cd --shell zsh --version-file-strategy=recursive)"
+fi
 
 # Path should be set after fnm
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.yarn/bin:$NPM_CONFIG_PREFIX/bin:$PNPM_HOME:/opt/homebrew/bin:$PATH"
@@ -581,6 +576,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # 有赞
 alias ynpm="npm --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 alias ynpx="npx --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
+alias yyarn="yarn --registry=http://registry.npm.qima-inc.com --disturl=http://npm.taobao.org/mirrors/node"
 
 # 加载python环境
 alias python="python3"
@@ -603,3 +599,4 @@ export PATH="$HOME/.local/bin:$PATH"
 export GIT_MERGE_AUTOEDIT=no
 export EDITOR=cursor
 alias edit="cursor"
+export PYTHON="/opt/homebrew/opt/python@3.11/bin/python3.11"

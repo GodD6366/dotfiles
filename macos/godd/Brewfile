@@ -63,8 +63,6 @@ brew "nexttrace"
 brew "pkgconf"
 # Install NodeJS versions
 brew "node-build"
-# Node.js version manager
-brew "nodenv"
 # Development kit for the Java programming language
 brew "openjdk"
 # Pinentry for GPG on Mac
@@ -167,14 +165,14 @@ cask "gray"
 cask "hyper"
 # Free and open-source media player
 cask "iina"
+# Tool for multi-language users
+cask "input-source-pro"
 # Menu bar manager
 cask "jordanbaird-ice"
 # File archiver
 cask "keka"
 # Helper application for the Keka file archiver
 cask "kekaexternalhelper"
-# Switch input method per application
-cask "keyboardholder"
 # Open-source keystroke visualiser
 cask "keycastr"
 # Utility that shows the latest app updates
