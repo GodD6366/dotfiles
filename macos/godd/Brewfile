@@ -73,8 +73,6 @@ brew "pnpm"
 brew "protobuf"
 # Python version management
 brew "pyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Safe, concurrent, practical language
 brew "rust"
 # Display and control your Android device
@@ -83,22 +81,14 @@ brew "scrcpy"
 brew "starship"
 # User interface to the TELNET protocol
 brew "telnet"
-# Programmatically correct mistyped console commands
-brew "thefuck"
-# Simplified and community-driven man pages
-brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Sends magic packets to wake up network-devices
-brew "wakeonlan"
 # Internet file retriever
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
-# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
-brew "oven-sh/bun/bun"
 # The AI coding agent built for the terminal.
 brew "sst/tap/opencode"
 # Password manager that keeps all passwords secure behind one password
@@ -139,6 +129,7 @@ cask "discord"
 # Web browser
 cask "firefox"
 cask "font-cascadia-mono"
+cask "font-departure-mono-nerd-font"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono"
