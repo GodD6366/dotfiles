@@ -27,6 +27,8 @@ brew "autojump"
 brew "gettext"
 # Cross-platform make
 brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Pack, ship and run any application as a lightweight container
@@ -65,6 +67,8 @@ brew "pkgconf"
 brew "node-build"
 # Development kit for the Java programming language
 brew "openjdk"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Fast, disk space efficient package manager
@@ -122,6 +126,8 @@ cask "claude"
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# Claude code parallelisation
+cask "conductor"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
 # Voice and text chat software
