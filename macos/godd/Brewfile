@@ -100,6 +100,8 @@ cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
 cask "account-switcher"
+# Menu bar tool to limit maximum charging percentage
+cask "aldente"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Transfer files from and to an Android smartphone
