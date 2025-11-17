@@ -230,8 +230,6 @@ cask "reminders-menubar"
 cask "snipaste"
 # System monitor for the menu bar
 cask "stats"
-# Network toolbox
-cask "surge"
 # App to switch hosts
 cask "switchhosts"
 # Terminal emulator, SSH and serial client
