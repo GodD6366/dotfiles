@@ -599,7 +599,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export GIT_MERGE_AUTOEDIT=no
 export EDITOR=cursor
-alias edit="cursor"
+alias edit="agy"
 # export PYTHON="/opt/homebrew/opt/python@3.11/bin/python3.11"
 
 # Added by Antigravity
