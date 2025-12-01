@@ -250,6 +250,8 @@ cask "webpquicklook"
 cask "wechat"
 # Wine wrapper built with SwiftUI
 cask "whisky"
+# Network protocol analyzer
+cask "wireshark-app"
 # YouTube Music Desktop App
 cask "youtube-music"
 mas "1Password for Safari", id: 1569813296
