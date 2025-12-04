@@ -142,6 +142,7 @@ cask "font-cascadia-mono"
 cask "font-departure-mono-nerd-font"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
+cask "font-geist-mono-nerd-font"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-maple-mono-nf"
@@ -191,6 +192,8 @@ cask "menuwhere"
 cask "microsoft-remote-desktop"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# GameStream client
+cask "moonlight"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
 # Music streaming platform
