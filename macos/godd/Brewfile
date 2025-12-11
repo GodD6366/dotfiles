@@ -250,6 +250,8 @@ cask "todesk"
 cask "topnotch"
 # Open-source code editor
 cask "visual-studio-code"
+# Open-source code editor
+cask "visual-studio-code@insiders"
 # Rust-based terminal
 cask "warp"
 # Quick Look plugin for webp files
