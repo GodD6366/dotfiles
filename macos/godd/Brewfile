@@ -18,6 +18,7 @@ tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "sst/tap"
 tap "th-ch/youtube-music"
+tap "tw93/tap"
 tap "ybeapps/sourcegit"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
@@ -97,6 +98,8 @@ brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
 brew "oven-sh/bun/bun"
 # The AI coding agent built for the terminal.
 brew "sst/tap/opencode"
+# Comprehensive macOS cleanup and application uninstall tool
+brew "tw93/tap/mole"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
