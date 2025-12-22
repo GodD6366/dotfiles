@@ -78,8 +78,6 @@ brew "pnpm"
 brew "protobuf"
 # Python version management
 brew "pyenv"
-# Safe, concurrent, practical language
-brew "rust"
 # Display and control your Android device
 brew "scrcpy"
 # Cross-shell prompt for astronauts
@@ -278,7 +276,6 @@ mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
 mas "Data Jar", id: 1453273600
 mas "DockX", id: 6452276577
-mas "Dropover", id: 1355679052
 mas "Encrypto", id: 935235287
 mas "Folder Preview", id: 6698876601
 mas "HEIC Converter", id: 1294126402
