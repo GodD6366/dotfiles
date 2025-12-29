@@ -10,6 +10,7 @@ tap "he3-app/he3"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
+tap "lbjlaq/antigravity-manager", "https://github.com/lbjlaq/Antigravity-Manager"
 tap "lihaoyun6/tap"
 tap "mac-cleanup/mac-cleanup-py"
 tap "mediar-ai/screenpipe", "https://github.com/mediar-ai/screenpipe.git"
@@ -111,6 +112,8 @@ cask "alt-tab"
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
+# Professional Account Management for AI Services
+cask "antigravity-tools"
 # Platform for API documentation, debugging, Mock and testing
 cask "apipost"
 # Application uninstaller
