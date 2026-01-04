@@ -216,6 +216,8 @@ cask "orbstack"
 cask "pearcleaner"
 # Quick Look plug-in that renders source code with syntax highlighting
 cask "qlcolorcode"
+# Display image info and preview unsupported formats in QuickLook
+cask "qlimagesize"
 # Quick Look generator for Markdown files
 cask "qlmarkdown"
 # Quick Look plugin for plaintext files without an extension
@@ -244,6 +246,10 @@ cask "switchhosts"
 cask "tabby"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Finder extension for opening a terminal from the current directory
+cask "termhere"
+# Remote control software
+cask "todesk"
 # Utility to hide the notch
 cask "topnotch"
 # Open-source code editor
