@@ -88,6 +88,8 @@ brew "starship"
 brew "telnet"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
 # Internet file retriever
 brew "wget"
 # UNIX shell (command interpreter)
@@ -213,6 +215,8 @@ cask "notion"
 cask "obsidian"
 # System and utility switches
 cask "only-switch"
+# AI coding agent desktop client
+cask "opencode-desktop"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Utility to uninstall apps and remove leftover files from old/uninstalled apps
