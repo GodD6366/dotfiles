@@ -3,6 +3,7 @@ tap "alienator88/cask"
 tap "beeftornado/rmtree"
 tap "bigwig-club/brew"
 tap "buo/cask-upgrade"
+tap "charmbracelet/tap"
 tap "ecopastehub/ecopaste"
 tap "felixkratz/formulae"
 tap "github/gh"
@@ -91,6 +92,8 @@ brew "tree"
 brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
+# A powerful terminal-based AI assistant for developers, providing intelligent coding assistance directly in your terminal.
+brew "charmbracelet/tap/crush"
 # Python cleanup script for macOS
 brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
