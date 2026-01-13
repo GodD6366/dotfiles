@@ -19,7 +19,6 @@ tap "mrkai77/cask"
 tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "sst/tap"
-tap "th-ch/youtube-music"
 tap "tw93/tap"
 tap "ybeapps/sourcegit"
 # Interpreted, interactive, object-oriented programming language
@@ -275,8 +274,6 @@ cask "whisky"
 cask "wireshark-app"
 # All-in-one office service platform in Chinese
 cask "wpsoffice-cn"
-# YouTube Music Desktop App
-cask "youtube-music"
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AmorphousDiskMark", id: 1168254295
