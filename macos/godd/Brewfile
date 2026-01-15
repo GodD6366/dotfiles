@@ -5,6 +5,7 @@ tap "bigwig-club/brew"
 tap "buo/cask-upgrade"
 tap "charmbracelet/tap"
 tap "ecopastehub/ecopaste"
+tap "farion1231/ccswitch"
 tap "felixkratz/formulae"
 tap "github/gh"
 tap "he3-app/he3"
@@ -37,8 +38,6 @@ brew "curl"
 brew "docker"
 # View disk space usage and delete unwanted data, fast
 brew "dua-cli"
-# International domain name library (IDNA2008, Punycode and TR46)
-brew "libidn2"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Fast and simple Node.js version manager
@@ -49,6 +48,8 @@ brew "gh"
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
@@ -128,6 +129,8 @@ cask "arc"
 cask "backuploupe"
 # Menu bar icon organiser
 cask "bartender"
+# Configuration manager for Claude Code and Codex providers
+cask "cc-switch"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Anthropic's official Claude AI desktop app
@@ -275,7 +278,7 @@ cask "wpsoffice-cn"
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AmorphousDiskMark", id: 1168254295
-mas "Barbee", id: 0
+mas "Barbee", id: 1548711022
 mas "Blackmagic Disk Speed Test", id: 425264550
 mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
