@@ -605,5 +605,5 @@ export PATH="/Users/godd/.antigravity/antigravity/bin:$PATH"
 export GIT_MERGE_AUTOEDIT=no
 export EDITOR=cursor
 alias edit="code-insiders"
-alias code="code-insiders"
+alias code="code"
 

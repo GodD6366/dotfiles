@@ -38,7 +38,7 @@ brew "curl"
 brew "docker"
 # View disk space usage and delete unwanted data, fast
 brew "dua-cli"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Fast and simple Node.js version manager
 brew "fnm"
@@ -106,7 +106,7 @@ brew "tw93/tap/mole"
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
-cask "account-switcher"
+cask "bigwig-club/brew/account-switcher"
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
 # Enable Windows-like alt-tab
@@ -116,7 +116,7 @@ cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
 # Professional Account Management for AI Services
-cask "antigravity-tools"
+cask "lbjlaq/antigravity-manager/antigravity-tools"
 # Platform for API documentation, debugging, Mock and testing
 cask "apipost"
 # Application uninstaller
@@ -130,7 +130,7 @@ cask "backuploupe"
 # Menu bar icon organiser
 cask "bartender"
 # Configuration manager for Claude Code and Codex providers
-cask "cc-switch"
+cask "farion1231/ccswitch/cc-switch"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
 # Anthropic's official Claude AI desktop app
@@ -190,7 +190,7 @@ cask "keycastr"
 # Utility that shows the latest app updates
 cask "latest"
 # Change the style of the Apple logo in macOS menu bar.
-cask "logoer"
+cask "lihaoyun6/tap/logoer"
 # Window manager
 cask "loop"
 # Track and update to the latest versions of installed software
@@ -238,7 +238,7 @@ cask "quicklook-json"
 # Quick Look generator for Adobe Swatch Exchange files
 cask "quicklookase"
 # A lightweight and high-performance screen recorder for macOS.
-cask "quickrecorder"
+cask "lihaoyun6/tap/quickrecorder"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Simple menu bar app to view and interact with reminders
