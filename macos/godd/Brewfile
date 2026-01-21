@@ -189,6 +189,8 @@ cask "kekaexternalhelper"
 cask "keycastr"
 # Utility that shows the latest app updates
 cask "latest"
+# Launchpad alternative
+cask "launchos"
 # Change the style of the Apple logo in macOS menu bar.
 cask "lihaoyun6/tap/logoer"
 # Window manager
@@ -275,6 +277,7 @@ cask "whisky"
 cask "wireshark-app"
 # All-in-one office service platform in Chinese
 cask "wpsoffice-cn"
+mas "1Capture", id: 6742318274
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AmorphousDiskMark", id: 1168254295
