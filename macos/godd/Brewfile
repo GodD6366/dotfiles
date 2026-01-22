@@ -129,7 +129,7 @@ cask "arc"
 cask "backuploupe"
 # Menu bar icon organiser
 cask "bartender"
-# Configuration manager for Claude Code and Codex providers
+# Configuration manager for Claude Code, Codex, Gemini and OpenCode
 cask "farion1231/ccswitch/cc-switch"
 # Rule-based custom proxy with GUI based on clash
 cask "clashx-pro"
