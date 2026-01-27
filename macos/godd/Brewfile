@@ -20,6 +20,7 @@ tap "mrkai77/cask"
 tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "sst/tap"
+tap "steipete/tap"
 tap "tw93/tap"
 tap "ybeapps/sourcegit"
 # Interpreted, interactive, object-oriented programming language
@@ -139,6 +140,8 @@ cask "claude"
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# Menu bar usage monitor for Codex and Claude
+cask "steipete/tap/codexbar"
 # Claude code parallelisation
 cask "conductor"
 # Browser for SQLite databases
