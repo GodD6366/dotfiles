@@ -63,6 +63,10 @@ brew "lazygit"
 brew "libgpg-error"
 # Mac App Store command-line interface
 brew "mas"
+# Modern and intuitive terminal-based text editor
+brew "micro"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Open source visual route tracking CLI tool
 brew "nexttrace"
 # Package compiler and linker metadata toolkit

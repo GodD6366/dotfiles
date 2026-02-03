@@ -87,8 +87,9 @@ DISABLE_CORRECTION="true"
 alias dh='dirs -v'
 alias asitop='sudo asitop'
 
-export LANG=en_US.utf8
-# export LANG=zh_CN.UTF-8
+# export LANG=en_US.utf8
+export LANG="zh_CN.UTF-8"
+export LC_ALL="zh_CN.UTF-8"
 
 # surge proxy
 #export https_proxy=http://127.0.0.1:7890
