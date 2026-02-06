@@ -49,6 +49,8 @@ brew "git-lfs"
 brew "libidn2"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Tool for glamorous shell scripts
+brew "gum"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
@@ -119,16 +121,10 @@ cask "lbjlaq/antigravity-manager/antigravity-tools"
 cask "appcleaner"
 # User-friendly GUI app for Homebrew
 cask "applite"
-# Alternative GUI for Time Machine
-cask "backuploupe"
 # Menu bar icon organiser
 cask "bartender"
 # Configuration manager for Claude Code, Codex, Gemini and OpenCode
 cask "farion1231/ccswitch/cc-switch"
-# Rule-based custom proxy with GUI based on clash
-cask "clashx-pro"
-# Anthropic's official Claude AI desktop app
-cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
@@ -183,8 +179,6 @@ cask "latest"
 cask "launchos"
 # Window manager
 cask "loop"
-# Track and update to the latest versions of installed software
-cask "macupdater"
 # Access the menu from anywhere
 cask "menuwhere"
 # Remote desktop client
@@ -233,10 +227,6 @@ cask "switchhosts"
 cask "tabby"
 # Messaging app with a focus on speed and security
 cask "telegram"
-# Finder extension for opening a terminal from the current directory
-cask "termhere"
-# Remote control software
-cask "todesk"
 # Open-source code editor
 cask "visual-studio-code"
 # Open-source code editor
