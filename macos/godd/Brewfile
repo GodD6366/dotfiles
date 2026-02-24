@@ -138,6 +138,8 @@ brew "mac-cleanup/mac-cleanup-py/mac-cleanup-py"
 brew "oven-sh/bun/bun"
 # The AI coding agent built for the terminal.
 brew "sst/tap/opencode"
+# Fast CLI for Apple Reminders
+brew "steipete/tap/remindctl"
 # Comprehensive macOS cleanup and application uninstall tool
 brew "tw93/tap/mole"
 # Password manager that keeps all passwords secure behind one password
