@@ -160,7 +160,7 @@ cask "appcleaner"
 cask "applite"
 # Menu bar icon organiser
 cask "bartender"
-# Configuration manager for Claude Code, Codex, Gemini and OpenCode
+# Configuration manager for Claude Code, Codex, Gemini CLI, OpenCode and OpenClaw
 cask "farion1231/ccswitch/cc-switch"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
@@ -286,6 +286,7 @@ mas "1Capture", id: 6742318274
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AmorphousDiskMark", id: 1168254295
+mas "Amphetamine", id: 937984704
 mas "Barbee", id: 1548711022
 mas "Blackmagic Disk Speed Test", id: 425264550
 mas "Bob", id: 1630034110
