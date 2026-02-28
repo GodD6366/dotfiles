@@ -18,6 +18,7 @@ tap "oven-sh/bun"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "sst/tap"
 tap "steipete/tap"
+tap "surge-downloader/tap"
 tap "tw93/tap"
 tap "ybeapps/sourcegit"
 # Improved shell history for zsh, bash, fish and nushell
@@ -262,6 +263,8 @@ cask "raycast"
 cask "reminders-menubar"
 # Snip or pin screenshots
 cask "snipaste"
+# Blazing fast TUI download manager built in Go for power users
+cask "surge-downloader/tap/surge"
 # App to switch hosts
 cask "switchhosts"
 # Terminal emulator, SSH and serial client
