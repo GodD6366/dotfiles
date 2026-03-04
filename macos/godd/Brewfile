@@ -153,8 +153,6 @@ cask "aldente"
 cask "android-file-transfer"
 # Android SDK component
 cask "android-platform-tools"
-# Professional Account Management for AI Services
-cask "lbjlaq/antigravity-manager/antigravity-tools"
 # Application uninstaller
 cask "appcleaner"
 # User-friendly GUI app for Homebrew
